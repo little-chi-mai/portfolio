@@ -5,49 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/logo-maiii.png">
+    <title>Mai's portfolio</title>
 </head>
 <body>
     <div class="container">
         <nav class="navigator">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#technologies">Technologies</a>
+            <a class="navigator__link"  href=""><img class="navigator__logo" src="img/logo-maii.png" alt="mai logo"></a>
+            <a class="navigator__link" href="#home">Home</a>
+            <a class="navigator__link" href="#about">About</a>
+            <a class="navigator__link" href="#projects">Projects</a>
+            <a class="navigator__link" href="#technologies">Technologies</a>
         </nav>
 
         <div class="scrolling-box">
-            <section id="about" class="about">
-                <img class="about__photo" src="img/mai.jpeg" alt="picture of Mai">
+            <section id="home" class="home scrolling-box__section">
+                <img class="home__photo" src="img/mai.jpeg" alt="picture of Mai">
+                <div class="home__mai">
+                    <p class="home__mai-name">Mai Nguyen</p>
+                    <p class="home__mai-title">Junior Software Engineer</p>
+                    <div class="home__mai-location">
+                        <img class="home__mai-location-icon" src="SVG/location-pin.svg" alt="">
+                        <p class="home__mai-location-sydney">Sydney, Australia</p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section id="about" class="about scrolling-box__section">
+                
                 <div class="about__mai">
-                    <p class="about__mai-name">Mai Nguyen</p>
-                    <p class="about__mai-title">Junior Software Engineer</p>
-                    <p class="about__mai-location">Sydney</p>
+                    <div class="technologies__title">About me</div>
+                    <p class="about__mai-story">
+                        Being passionate about solving problems and helping people, I have been working in the hospitality industry for around four years. And now, with the skills that I have been learning in programming and computer science from the Software Engineering Course at General Assembly, I will be able to help many more people. 
+                    </p>
+                    <p class="about__mai-story">
+                        I believe in the power of technology and its impact to every other industry. I want to do what I truly believe in so that the world can be a little happier place.
+                    </p>
                 </div>
             </section>
     
-            <section id="projects" class="projects">
+            <section id="projects" class="projects scrolling-box__section">
+                <div class="technologies__title">Recent projects</div>
                 <div class="projects__card">
                     <img class="projects__card-photo" src="img/furnique-2.png" alt="photo of the second project">
+                    <div class="projects__btn">
+                        <a href="https://furnique.netlify.app" target=”_blank”>
+                            <button class="projects__btn-demo">Live demo</button>
+                        </a>
+
+                        <a href="https://github.com/little-chi-mai/furnish-frontend" target=”_blank”>
+                            <button class="projects__btn-git">Github repo frontend</button>
+                        </a>
+
+                        <a href="https://github.com/little-chi-mai/furnish-backend" target=”_blank”>
+                            <button class="projects__btn-git">Github repo backend</button>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="projects__card">
                     <img class="projects__card-photo" src="img/foodhub.png" alt="photo of the second project">
+                    <div class="projects__btn">
+                        <a href="https://foodhub-project1.herokuapp.com" target=”_blank”>
+                            <button class="projects__btn-demo">Live demo</button>
+                        </a>
+
+                        <a href="https://github.com/little-chi-mai/project1" target=”_blank”>
+                            <button class="projects__btn-git">Github repo</button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="projects__card">
                     <img class="projects__card-photo" src="img/tic-tac-toe.png" alt="photo of the first project">
+                    <div class="projects__btn">
+                        <a href="https://little-chi-mai.github.io/project0/" target=”_blank”>
+                            <button class="projects__btn-demo">Live demo</button>
+                        </a>
+
+                        <a href="https://github.com/little-chi-mai/project0" target=”_blank”>
+                            <button class="projects__btn-git">Github repo</button>
+                        </a>
+                    </div>
                 </div>
                 
             </section>
     
-            <section id="technologies" class="technologies">
-                Technologies
+            <section id="technologies" class="technologies scrolling-box__section">
+                <p class="technologies__title">Technologies</p>
+                <div class="technologies__icon">
+                    <img class="technologies__icon-tech" src="SVG/bootstrap.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/css.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/express.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/heroku.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/html5.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/javascript.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/jquery.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/mongodb.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/netlify.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/nodejs.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/postgresql.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/rails.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/react.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/ruby-2.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/sass.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/vue-js.svg" alt="">
+                </div>
+                <p class="technologies__title">Tools</p>
+                <div class="technologies__icon">
+                    <img class="technologies__icon-tool" src="SVG/atom.svg" alt="">
+                    <img class="technologies__icon-tool" src="SVG/chrome.svg" alt="">
+                    <img class="technologies__icon-tool" src="SVG/git.svg" alt="">
+                    <img class="technologies__icon-tool" src="SVG/github.svg" alt="">
+                    <img class="technologies__icon-tool" src="SVG/trello.svg" alt="">
+                    <img class="technologies__icon-tool" src="SVG/vscode.svg" alt="">
+                </div>
+                
             </section>
 
-            <footer id="footer" class="footer">
-                Footer
-            </footer>
+            
         </div>
+        <footer id="footer" class="footer">
+            <a href="mailto:chimai.dk@gmail.com"><img class="footer__icon" src="SVG/envelope.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank"><img class="footer__icon" src="SVG/linkedin-square.svg" alt=""></a>
+            <a href="https://github.com/little-chi-mai" target="_blank"><img class="footer__icon" src="SVG/github.svg" alt=""></a>
+
+            <!-- <svg className="footer__icon">
+                <use xlink:href="SVG/github.svg#github"></use>
+            </svg>
+             -->
+        </footer>
     </div>
     
 </body>

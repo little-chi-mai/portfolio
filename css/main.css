@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap");
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Slab', serif; */
+* {
+  box-sizing: border-box; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -12,23 +15,25 @@ html {
   justify-content: center;
   flex-direction: column;
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .navigator {
-  background-color: #000;
+  background-color: #222222;
   padding: 1rem 0;
   text-align: center;
   width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0; }
-
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none; }
+  .navigator__logo {
+    height: 6rem; }
+  .navigator__link {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none; }
 
 .scrolling-box {
   display: block;
@@ -37,14 +42,14 @@ nav a {
   text-align: center;
   width: 90%;
   flex: 1 0 100%; }
+  .scrolling-box__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 8.5rem; }
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 95vh; }
-
-.about {
+.home {
   background-color: burlywood;
   /* background-image: url(../img/mai.jpeg);
     background-size: 35%;
@@ -54,14 +59,26 @@ section {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center; }
-  .about__photo {
+  .home__photo {
     height: 50vh; }
-  .about__mai {
+  .home__mai {
     text-align: left;
     margin: 5rem; }
-    .about__mai-name {
+    .home__mai-name {
       font-size: 6rem;
       text-transform: uppercase; }
+    .home__mai-location {
+      display: flex;
+      align-items: center; }
+      .home__mai-location-icon {
+        height: 3rem; }
+
+.about {
+  background-color: antiquewhite; }
+  .about__mai {
+    padding: 10%; }
+  .about__mai-story {
+    text-align: left; }
 
 .projects {
   background-color: lightblue;
@@ -71,15 +88,77 @@ section {
   align-items: stretch;
   align-content: space-around;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  border: #222222; }
   .projects__card {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
     flex: 0 0 20%; }
     .projects__card-photo {
       width: 60rem; }
+    .projects__card-photo:hover {
+      opacity: 0.8; }
+  .projects__btn {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem; }
+  .projects__btn-demo {
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    background-color: #d47821;
+    color: white;
+    border: none;
+    margin: 1rem; }
+  .projects__btn-demo:hover {
+    background-color: #f7a04f; }
+  .projects__btn-git {
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    background-color: #363333;
+    color: white;
+    border: none;
+    margin: 1rem; }
+  .projects__btn-git:hover {
+    background-color: #474545; }
 
 .technologies {
-  background-color: lightcoral; }
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column; }
+  .technologies__title {
+    text-transform: uppercase;
+    font-size: 3rem; }
+  .technologies__icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%; }
+    .technologies__icon-tech {
+      height: 5rem;
+      width: 12rem;
+      margin: 1rem;
+      flex: 0 0 20%; }
+    .technologies__icon-tool {
+      height: 5rem;
+      width: 12rem;
+      margin: 1rem;
+      flex: 0 0 20%;
+      justify-self: center; }
 
 .footer {
   height: 20vh;
-  background-color: grey; }
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  justify-content: center; }
+  .footer__icon {
+    height: 4rem;
+    margin: 5rem;
+    fill: white; }
+  .footer__icon:hover {
+    height: 4.4rem; }
