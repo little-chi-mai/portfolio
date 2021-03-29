@@ -27,7 +27,8 @@ html {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   .navigator__logo {
     height: 6rem; }
   .navigator__link {
@@ -100,7 +101,7 @@ html {
     .projects__card-photo {
       width: 60rem; }
     .projects__card-photo:hover {
-      opacity: 0.8; }
+      width: 61rem; }
   .projects__btn {
     display: flex;
     align-content: space-around;
@@ -132,7 +133,8 @@ html {
   flex-direction: column; }
   .technologies__title {
     text-transform: uppercase;
-    font-size: 3rem; }
+    font-size: 4rem;
+    margin: 2rem; }
   .technologies__icon {
     display: flex;
     flex-wrap: wrap;
@@ -156,6 +158,8 @@ html {
   background-color: #222222;
   display: flex;
   justify-content: center; }
+  .footer__contact {
+    width: 100%; }
   .footer__icon {
     height: 4rem;
     margin: 5rem;
