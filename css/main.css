@@ -131,6 +131,10 @@ hr {
     padding: 2rem 2rem;
     background-color: #e9e6e6;
     color: #242424; }
+    .projects__card-title {
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #a85e0a; }
     .projects__card-photo {
       max-width: 98%; }
     .projects__card-photo:hover {
