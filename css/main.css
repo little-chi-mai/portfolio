@@ -17,14 +17,22 @@ html {
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif; }
 
+hr {
+  margin: 2rem; }
+
+.hr-weird {
+  width: 20rem; }
+
 .navigator {
-  background-color: #222222;
+  background-color: #2c2b2b;
   padding: 0.5rem 0;
   text-align: center;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
@@ -36,6 +44,15 @@ html {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none; }
+
+.footer-nav__wrap-icon {
+  height: 3rem;
+  margin: 1rem 2rem;
+  fill: white; }
+
+.footer-nav__wrap-icon:hover {
+  transition: 0.3s;
+  height: 3.2rem; }
 
 .scrolling-box {
   display: block;
@@ -80,7 +97,10 @@ html {
   background-color: #ececeb;
   min-height: 97vh; }
   .about__mai {
-    padding: 10%; }
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .about__mai-story {
     text-align: left; }
 
@@ -97,6 +117,8 @@ html {
   border: #222222; }
   .projects__card {
     display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
     justify-content: space-around;
     align-content: center;
     align-items: center;
@@ -110,10 +132,10 @@ html {
     background-color: #e9e6e6;
     color: #242424; }
     .projects__card-photo {
-      width: 50vh; }
+      max-width: 98%; }
     .projects__card-photo:hover {
-      opacity: 0.8;
-      width: 50.5vh; }
+      transition: 0.3s;
+      opacity: 0.8; }
   .projects__btn {
     display: flex;
     align-content: space-around;
@@ -129,6 +151,7 @@ html {
     border: none;
     margin: 0.5rem; }
   .projects__btn-demo:hover {
+    transition: 0.3s;
     background-color: #ffa41c; }
   .projects__btn-git {
     border-radius: 5rem;
@@ -138,20 +161,25 @@ html {
     border: none;
     margin: 0.5rem; }
   .projects__btn-git:hover {
+    transition: 0.3s;
     background-color: #474545; }
   .projects__description {
+    text-align: left;
     margin-top: 0;
     padding-top: 0; }
+
+#recent_project {
+  width: 100vh; }
 
 .technologies {
   background-color: #fffdfd;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap; }
   .technologies__title {
     text-transform: uppercase;
     font-size: 4rem;
-    margin: 2rem;
-    width: 100%; }
+    margin: 2rem; }
   .technologies__icon {
     display: flex;
     flex-wrap: wrap;
@@ -161,12 +189,12 @@ html {
       height: 5rem;
       width: 12rem;
       margin: 1rem;
-      flex: 0 0 20%; }
+      flex: 1 1 20%; }
     .technologies__icon-tool {
       height: 5rem;
       width: 12rem;
       margin: 1rem;
-      flex: 0 0 20%;
+      flex: 0 1 20%;
       justify-self: center; }
 
 .footer {
@@ -174,12 +202,20 @@ html {
   width: 100%;
   background-color: #d8a5a5;
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 20%; }
+  .footer__text {
+    width: 100vh;
+    text-align: center; }
   .footer__contact {
     width: 100%; }
-  .footer__icon {
-    height: 4rem;
-    margin: 5rem;
-    fill: white; }
-  .footer__icon:hover {
-    height: 4.4rem; }
+  .footer__wrap {
+    display: flex; }
+    .footer__wrap-icon {
+      height: 4rem;
+      margin: 2rem 5rem; }
+    .footer__wrap-icon:hover {
+      transition: 0.3s;
+      height: 4.4rem; }

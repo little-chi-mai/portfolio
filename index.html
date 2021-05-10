@@ -18,6 +18,18 @@
             <a class="navigator__link" href="#about">About</a>
             <a class="navigator__link" href="#projects">Projects</a>
             <a class="navigator__link" href="#technologies">Technologies</a>
+            <div class="footer-nav__wrap">
+                <a href="mailto:chimai.dk@gmail.com">
+                    <img class="footer-nav__wrap-icon"  src="SVG/envelope.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
+                    <img class="footer-nav__wrap-icon"  src="SVG/linkedin-square.svg" alt="">
+                </a>
+                <a href="https://github.com/little-chi-mai" target="_blank">
+                    <img class="footer-nav__wrap-icon" src="SVG/github.svg" alt="">
+                </a>
+
+            </div>
         </nav>
 
         <div class="scrolling-box">
@@ -25,6 +37,7 @@
                 <img class="home__photo" src="img/mai.jpeg" alt="picture of Mai">
                 <div class="home__mai">
                     <p class="home__mai-name">Mai Nguyen</p>
+                    <hr>
                     <p class="home__mai-title">Junior Software Engineer</p>
                     <div class="home__mai-location">
                         <img class="home__mai-location-icon" src="SVG/location-pin.svg" alt="">
@@ -37,19 +50,29 @@
             <section id="about" class="about scrolling-box__section">
                 
                 <div class="about__mai">
-                    <div class="technologies__title">About me</div>
-                    <p class="about__mai-story">
-                        Being passionate about solving problems and helping people, I have been working in the hospitality industry for around four years. And now, with the skills that I have been learning in programming and computer science from the Software Engineering Course at General Assembly, I will be able to help many more people. 
-                    </p>
-                    <p class="about__mai-story">
-                        I believe in the power of technology and its impact to every other industry. I want to do what I truly believe in so that the world can be a little happier place.
-                    </p>
+                    <div class="technologies__title">About me<hr class="hr-weird"></div>
+                    
+                    <div>
+                        <p class="about__mai-story">
+                            My name is Mai (pronounced as /maɪ/ - like when you sing '<strong>my</strong> oh <strong>my</strong> do you wanna say goodbye...'). I am a junior software developer that passionate about solving real world problems. From a self-taught amature coder, my journey to be a professional programmer started with the decision of taking the Immersive Software Engineering Course at General Assembly Australia. My whole life has changed since then. Learning how to code is the best thing that has ever happened to me. I have been and will be writing a lot more code (also creating a lot of bugs) and will keep learning to become a better developer so that I can help to make someone's life easier with the apps that I create.
+                        </p>
+                        
+                        <p class="about__mai-story">
+                            I am an ex-hotelier. Now I am currently a full-time Instructor Associate at General Assembly. I find it's amazing and rewarding to help our students to become better devs in the future. 
+                            When not coding, I am a fulltime dog-lover and a part-time home cook. Dinner is absolute my favourite meal of the day.
+                        </p>
+
+                        <p class="about__mai-story">
+                            You can find some of my recent projects below. I keep them updated frequently.
+                        </p>
+                    </div>
                 </div>
             </section>
             
             
             <section id="projects" class="projects scrolling-box__section">
-                <div class="technologies__title">Recent projects</div>
+                <div class="technologies__title" id="recent_project">Recent projects <hr></div>
+                
                 <div class="projects__card">
                     <a href="https://furnique.netlify.app" target=”_blank" >
                         <img class="projects__card-photo" src="img/furnique-2.png" alt="photo of the second project">
@@ -95,7 +118,7 @@
                         <p>FoodHub is a web app that allows users to create their own account, post recipes and communicate with other users by commenting on their posts. Users can also create their recipe lists of their choice.</p>
 
                         <p>
-                            <strong>#Ruby/Rails/Bootstrap</strong>
+                            <strong>#Ruby/Rails/Bootstrap/PostgresQL</strong>
                         </p>
                     </div>
 
@@ -152,13 +175,14 @@
             </section>
     
             <section id="technologies" class="technologies scrolling-box__section">
-                <p class="technologies__title">Technologies</p>
+                <p class="technologies__title">Technologies<hr class="hr-weird"></p>
+
                 <div class="technologies__icon">
-                    <img class="technologies__icon-tech" src="SVG/bootstrap.svg?sanitize=true" alt=""/>
-                    <img class="technologies__icon-tech" src="SVG/css.svg?sanitize=true" alt=""/>
-                    <img class="technologies__icon-tech" src="SVG/express.svg?sanitize=true" alt="">
-                    <img class="technologies__icon-tech" src="SVG/heroku.svg?sanitize=true" alt="">
-                    <img class="technologies__icon-tech" src="SVG/html5.svg" alt=""/>
+                    <img class="technologies__icon-tech" src="SVG/bootstrap.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/css.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/express.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/heroku.svg" alt="">
+                    <img class="technologies__icon-tech" src="SVG/html5.svg" alt="">
                     <img class="technologies__icon-tech" src="SVG/javascript.svg" alt="">
                     <img class="technologies__icon-tech" src="SVG/jquery.svg" alt="">
                     <img class="technologies__icon-tech" src="SVG/mongodb.svg" alt="">
@@ -171,7 +195,8 @@
                     <img class="technologies__icon-tech" src="SVG/sass.svg" alt="">
                     <img class="technologies__icon-tech" src="SVG/vue-js.svg" alt="">
                 </div>
-                <p class="technologies__title">Tools</p>
+                <p class="technologies__title">Tools<hr class="hr-weird"></p>
+                
                 <div class="technologies__icon">
                     <img class="technologies__icon-tool" src="SVG/atom.svg" alt="">
                     <img class="technologies__icon-tool" src="SVG/chrome.svg" alt="">
@@ -186,14 +211,20 @@
             
         </div>
         <footer id="footer" class="footer">
-            <a href="mailto:chimai.dk@gmail.com"><img class="footer__icon" src="SVG/envelope.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank"><img class="footer__icon" src="SVG/linkedin-square.svg" alt=""></a>
-            <a href="https://github.com/little-chi-mai" target="_blank"><img class="footer__icon" src="SVG/github.svg" alt=""></a>
+            <p class="footer__text">Let's keep in touch! Kindly find me at:</p>
+            <div class="footer__wrap">
+                <a href="mailto:chimai.dk@gmail.com">
+                    <img class="footer__wrap-icon"  src="SVG/envelope.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
+                    <img class="footer__wrap-icon"  src="SVG/linkedin-square.svg" alt="">
+                </a>
+                <a href="https://github.com/little-chi-mai" target="_blank">
+                    <img class="footer__wrap-icon" src="SVG/github.svg" alt="">
+                </a>
 
-            <!-- <svg className="footer__icon">
-                <use xlink:href="SVG/github.svg#github"></use>
-            </svg>
-             -->
+            </div>
+            
         </footer>
     </div>
     

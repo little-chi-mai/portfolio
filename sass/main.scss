@@ -23,14 +23,26 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+hr {
+  // height: 100px;
+  // width: 150rem;
+  margin: 2rem;
+}
+
+.hr-weird {
+  width: 20rem;
+}
+
 .navigator {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(44, 43, 43);
   padding: 0.5rem 0;
   text-align: center;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
@@ -46,6 +58,19 @@ html {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+  }
+}
+
+.footer-nav__wrap {
+  &-icon {
+    height: 3rem;
+    margin: 1rem 2rem;
+    fill: white;
+  }
+
+  &-icon:hover {
+    transition: 0.3s;
+    height: 3.2rem;
   }
 }
 
@@ -96,9 +121,6 @@ html {
       text-transform: uppercase;
     }
 
-    &-title {
-    }
-
     &-location {
       display: flex;
       // justify-content: center;
@@ -118,6 +140,9 @@ html {
 
   &__mai {
     padding: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &__mai-story {
@@ -140,6 +165,8 @@ html {
 
   &__card {
     display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
     justify-content: space-around;
     align-content: center;
     align-items: center;
@@ -155,12 +182,13 @@ html {
     color: rgb(36, 36, 36);
 
     &-photo {
-      width: 50vh;
+      max-width: 98%;
     }
 
     &-photo:hover {
+      transition: 0.3s;
       opacity: 0.8;
-      width: 50.5vh;
+      // width: 100%;
     }
   }
 
@@ -183,6 +211,7 @@ html {
   }
 
   &__btn-demo:hover {
+    transition: 0.3s;
     background-color: rgb(255, 164, 28);
   }
 
@@ -196,19 +225,26 @@ html {
   }
 
   &__btn-git:hover {
+    transition: 0.3s;
     background-color: rgb(71, 69, 69);
   }
 
   &__description {
+    text-align: left;
     margin-top: 0;
     padding-top: 0;
   }
+}
+
+#recent_project {
+  width: 100vh;
 }
 
 .technologies {
   background-color: rgb(255, 253, 253);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   // align-content: center;
   // justify-content: center;
 
@@ -217,7 +253,7 @@ html {
     font-size: 4rem;
     margin: 2rem;
     // margin-top: 0.7rem;
-    width: 100%;
+    // width: 100vh;
   }
 
   &__icon {
@@ -225,19 +261,21 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
+    // flex: 1 0 20%;
 
     &-tech {
       height: 5rem;
       width: 12rem;
       margin: 1rem;
-      flex: 0 0 20%;
+
+      flex: 1 1 20%;
     }
 
     &-tool {
       height: 5rem;
       width: 12rem;
       margin: 1rem;
-      flex: 0 0 20%;
+      flex: 0 1 20%;
       justify-self: center;
     }
   }
@@ -248,19 +286,32 @@ html {
   width: 100%;
   background-color: rgb(216, 165, 165);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex: 1 1 20%;
+
+  &__text {
+    width: 100vh;
+    text-align: center;
+  }
 
   &__contact {
     width: 100%;
   }
 
-  &__icon {
-    height: 4rem;
-    margin: 5rem;
-    fill: white;
-  }
+  &__wrap {
+    display: flex;
 
-  &__icon:hover {
-    height: 4.4rem;
+    // flex: 1 1 20%;
+    &-icon {
+      height: 4rem;
+      margin: 2rem 5rem;
+    }
+
+    &-icon:hover {
+      transition: 0.3s;
+      height: 4.4rem;
+    }
   }
 }
