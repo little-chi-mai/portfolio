@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
     <link rel="icon" type="image/png" href="img/logo-maiii.png">
     <title>Mai's portfolio</title>
 </head>
 <body>
     <div class="container">
-        <nav class="navigator">
+        <nav id="navbar" class="navigator">
             <a class="navigator__link"  href=""><img class="navigator__logo" src="img/logo-maii.png" alt="mai logo"></a>
             <a class="navigator__link" href="#home">Home</a>
             <a class="navigator__link" href="#about">About</a>
@@ -44,7 +45,8 @@
                     </p>
                 </div>
             </section>
-    
+            
+            
             <section id="projects" class="projects scrolling-box__section">
                 <div class="technologies__title">Recent projects</div>
                 <div class="projects__card">
@@ -57,16 +59,20 @@
                         </a>
 
                         <a href="https://github.com/little-chi-mai/furnish-frontend" target=”_blank”>
-                            <button class="projects__btn-git">Github repo frontend</button>
+                            <button class="projects__btn-git">Source code frontend</button>
                         </a>
 
                         <a href="https://github.com/little-chi-mai/furnish-backend" target=”_blank”>
-                            <button class="projects__btn-git">Github repo backend</button>
+                            <button class="projects__btn-git">Source code backend</button>
                         </a>
                     </div>
 
-                    <div class="projects__discription">
-                        <p>Lala</p>
+                    <div class="projects__description">
+                        <p>Furnique is a e-commerce website that sells furniture. Shopping cart updates at real time. Users can log in and keep track of their history purchases. Stripe is used as a payment gate.</p>
+
+                        <p>
+                            <strong>#MongoDB/Express/React/Nodejs</strong> 
+                        </p>
                     </div>
                 </div>
                 
@@ -80,8 +86,41 @@
                         </a>
 
                         <a href="https://github.com/little-chi-mai/project1" target=”_blank”>
-                            <button class="projects__btn-git">Github repo</button>
+                            <button class="projects__btn-git">Source code</button>
                         </a>
+                    </div>
+
+                    <div class="projects__description">
+                        <p>FoodHub is a web app that allows users to create their own account, post recipes and communicate with other users by commenting on their posts. Users can also create their recipe lists of their choice.</p>
+
+                        <p>
+                            <strong>#Ruby/Rails/Bootstrap</strong>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="projects__card">
+                    <a href="https://github.com/Anchorite1001/project2-frontend" target=”_blank" >
+                        <img class="projects__card-photo" src="img/i-feel-like.png" alt="photo of the first project">
+                    </a>
+                    
+                    <div class="projects__btn">
+                        <a href=https://github.com/Anchorite1001/project2-frontend" target=”_blank”>
+                            <button class="projects__btn-demo">Live demo</button>
+                        </a>
+
+                        <a href="https://github.com/Anchorite1001/project2-frontend" target=”_blank”>
+                            <button class="projects__btn-git">Source code</button>
+                        </a>
+                    </div>
+
+                    <div class="projects__description">
+                        <p>My first group project that used Google Places API to suggest you with the a random restaurant when you feel adventorous with your culinary journey. The app allow you to log in and save your favourite restaurants to the database.</p>
+
+                        <p> 
+                            <strong>#React/Rails/Bootstrap/PostgresQL</strong>
+                        </p>
                     </div>
                 </div>
 
@@ -96,8 +135,16 @@
                         </a>
 
                         <a href="https://github.com/little-chi-mai/project0" target=”_blank”>
-                            <button class="projects__btn-git">Github repo</button>
+                            <button class="projects__btn-git">Source code</button>
                         </a>
+                    </div>
+
+                    <div class="projects__description">
+                        <p>My first project at General Assembly Australia. This is a classic game that has been designed to play between two players and let them freely choose their tokens. The algorithm was chosen to perform efficiently and to be able to keep track of multiple game rounds.</p>
+
+                        <p> 
+                            <strong>#JavaScript/jQuery/HTML/CSS</strong>
+                        </p>
                     </div>
                 </div>
                 

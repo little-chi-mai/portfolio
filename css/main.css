@@ -6,20 +6,20 @@ font-family: 'Roboto Slab', serif; */
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .container {
-  background-color: pink;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif; }
 
 .navigator {
   background-color: #222222;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   width: 100%;
   display: flex;
@@ -28,6 +28,7 @@ html {
   align-items: center;
   position: fixed;
   top: 0;
+  transition: top 0.4s;
   z-index: 100; }
   .navigator__logo {
     height: 6rem; }
@@ -39,27 +40,28 @@ html {
 .scrolling-box {
   display: block;
   overflow-y: scroll;
-  scroll-behavior: smooth;
   text-align: center;
-  width: 90%;
+  width: 100%;
   flex: 1 0 100%; }
   .scrolling-box__section {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
     min-height: 80vh;
     padding: 8.5rem; }
 
 .home {
-  background-color: burlywood;
-  /* background-image: url(../img/mai.jpeg);
-    background-size: 35%;
-    background-position: left;
-    background-repeat: no-repeat; */
+  background-image: url(../img/about.png);
+  background-size: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  color: #1a1a1a;
+  min-height: 95vh; }
   .home__photo {
     height: 50vh; }
   .home__mai {
@@ -75,21 +77,23 @@ html {
         height: 3rem; }
 
 .about {
-  background-color: antiquewhite; }
+  background-color: #ececeb;
+  min-height: 97vh; }
   .about__mai {
     padding: 10%; }
   .about__mai-story {
     text-align: left; }
 
 .projects {
-  background-color: lightblue;
+  background-color: #464545;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
   align-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
+  color: #e5e2e2;
   border: #222222; }
   .projects__card {
     display: flex;
@@ -97,44 +101,57 @@ html {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 0 0 20%; }
+    flex: 0 1 46%;
+    max-width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.212);
+    border-radius: 2%;
+    margin: 2rem;
+    padding: 2rem 2rem;
+    background-color: #e9e6e6;
+    color: #242424; }
     .projects__card-photo {
-      width: 60rem; }
+      width: 50vh; }
     .projects__card-photo:hover {
-      width: 61rem; }
+      opacity: 0.8;
+      width: 50.5vh; }
   .projects__btn {
     display: flex;
     align-content: space-around;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin: 1rem; }
+    margin: 0.5rem; }
   .projects__btn-demo {
-    border-radius: 0.8rem;
+    border-radius: 5rem;
     padding: 1rem 1.5rem;
-    background-color: #d47821;
+    background-color: #fd8412;
     color: white;
     border: none;
-    margin: 1rem; }
+    margin: 0.5rem; }
   .projects__btn-demo:hover {
-    background-color: #f7a04f; }
+    background-color: #ffa41c; }
   .projects__btn-git {
-    border-radius: 0.8rem;
+    border-radius: 5rem;
     padding: 1rem 1.5rem;
     background-color: #363333;
     color: white;
     border: none;
-    margin: 1rem; }
+    margin: 0.5rem; }
   .projects__btn-git:hover {
     background-color: #474545; }
+  .projects__description {
+    margin-top: 0;
+    padding-top: 0; }
 
 .technologies {
-  background-color: lightcoral;
+  background-color: #fffdfd;
   display: flex;
   flex-direction: column; }
   .technologies__title {
     text-transform: uppercase;
     font-size: 4rem;
-    margin: 2rem; }
+    margin: 2rem;
+    width: 100%; }
   .technologies__icon {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +172,7 @@ html {
 .footer {
   height: 20vh;
   width: 100%;
-  background-color: #222222;
+  background-color: #d8a5a5;
   display: flex;
   justify-content: center; }
   .footer__contact {
