@@ -8,3 +8,5 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+var myHeaders = new Headers();
+myHeaders.append('permissions-policy', 'interest-cohort=()');
