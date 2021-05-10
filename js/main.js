@@ -11,7 +11,7 @@ var currentScrollPos = window.pageYOffset;
 var myHeaders = new Headers();
 myHeaders.append('permissions-policy', 'interest-cohort=()');
 
-function copyToClipboard() {
+const copyToClipboard = function() {
   console.log('Laa');
   
   let txt = document.createTextNode('chimai.dk@gmail.com');
