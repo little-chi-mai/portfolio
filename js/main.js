@@ -10,3 +10,30 @@ var currentScrollPos = window.pageYOffset;
 }
 var myHeaders = new Headers();
 myHeaders.append('permissions-policy', 'interest-cohort=()');
+
+function copyToClipboard() {
+  console.log('Laa');
+  
+  let txt = document.createTextNode('chimai.dk@gmail.com');
+  var m = document;
+  var w = window;
+  var b = m.body;
+  b.appendChild(txt);
+  if (b.createTextRange) {
+    var d = b.createTextRange();
+    d.moveToElementText(txt);
+    d.select();
+    m.execCommand('copy');
+  } 
+  else {
+    var d = m.createRange();
+    var g = w.getSelection;
+    d.selectNodeContents(txt);
+    g().removeAllRanges();
+    g().addRange(d);
+    m.execCommand('copy');
+    g().removeAllRanges();
+  }
+  txt.remove();
+  window.alert("Copied email to your clipboard!");
+}
