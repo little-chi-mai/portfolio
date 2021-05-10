@@ -214,8 +214,8 @@ hr {
   .footer__wrap {
     display: flex; }
     .footer__wrap-icon {
-      height: 4rem;
+      height: 5rem;
       margin: 2rem 5rem; }
     .footer__wrap-icon:hover {
       transition: 0.3s;
-      height: 4.4rem; }
+      height: 5.4rem; }
