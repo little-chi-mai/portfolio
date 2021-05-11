@@ -19,7 +19,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -136,10 +136,11 @@ hr {
 
 .about {
   background-color: rgb(236, 236, 235);
-  min-height: 97vh;
-
+  min-height: 85vh;
+  padding: auto 5vh;
   &__mai {
-    padding: 10%;
+    padding: 2vh;
+    margin: 2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
