@@ -34,7 +34,18 @@
 
         <div class="scrolling-box">
             <section id="home" class="home scrolling-box__section">
-                <img class="home__photo" src="img/mai.jpeg" alt="picture of Mai">
+                <div class="container-pic">
+                    <div class="container-inner">
+                      <img
+                        class="circle"
+                        src="./img/tropical2.jpeg"
+                      />
+                      <img
+                        class="img img1"
+                        src="./img/mai-3.png"
+                      />
+                    </div>
+                  </div>
                 <div class="home__mai">
                     <p class="home__mai-name">Mai Nguyen</p>
                     <hr>
@@ -68,7 +79,7 @@
                             
                         </p>
                         <p class="about__mai-story">
-                            I am a junior software developer that is passionate about solving real world problems. From a self-taught amateur coder, my journey to be a professional engineer started with the decision of taking the Immersive Software Engineering course at General Assembly Australia. My whole life has changed since then. Learning how to build apps is the best thing that has ever happened to me. I have been and will be writing a lot more code (also creating a lot of bugs) and will keep learning to become a better developer so that I can help make someone's life easier with the apps that I create.
+                            I am a junior software developer that is passionate about solving real world problems. From a self-taught amateur coder, my journey to be a professional engineer started with the decision of taking the Immersive Software Engineering course at General Assembly Australia. My whole life has changed since then. Learning how to build apps is the best thing that has ever happened to me. I have been and will be writing a lot more code, while also creating more bugs. I aim to keep learning to become a better developer so that I can help improve someone's life with technology.
                         </p>
                         
                         <p class="about__mai-story">
@@ -88,9 +99,16 @@
                 
                 <div class="projects__card">
                     <p class="projects__card-title">FURNIQUE</p>
-                    <a href="https://furnique.netlify.app" target=”_blank" >
-                        <img class="projects__card-photo" src="img/furnique-2.png" alt="photo of the second project">
-                    </a>
+                    
+                        <div class="projects__card-pho">
+                            <div class="projects__card-photo projects__card-photo-1">
+                                <a class="projects__card-photo-link" href="https://furnique.netlify.app" target=”_blank" >
+                                    CLICK ME!
+                                </a>
+                            </div>
+                        </div>
+                    
+                    
                     <div class="projects__btn">
                         <a href="https://furnique.netlify.app" target=”_blank”>
                             <button class="projects__btn-demo">Live demo</button>
@@ -116,9 +134,14 @@
                 
                 <div class="projects__card">
                     <p class="projects__card-title">FOODHUB</p>
-                    <a href="https://foodhub-project1.herokuapp.com"" target=”_blank" >
-                        <img class="projects__card-photo" src="img/foodhub.png" alt="photo of the second project">
-                    </a>
+                    <div class="projects__card-pho">
+                        <div class="projects__card-photo projects__card-photo-2">
+                            <a class="projects__card-photo-link" href="https://foodhub-project1.herokuapp.com" target=”_blank" >
+                                CLICK ME!
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="projects__btn">
                         <a href="https://foodhub-project1.herokuapp.com" target=”_blank”>
                             <button class="projects__btn-demo">Live demo</button>
@@ -141,9 +164,14 @@
 
                 <div class="projects__card">
                     <p class="projects__card-title">I FEEL LIKE</p>
-                    <a href="https://github.com/Anchorite1001/project2-frontend" target=”_blank" >
-                        <img class="projects__card-photo" src="img/i-feel-like.png" alt="photo of the first project">
-                    </a>
+                    <div class="projects__card-pho">
+                        <div class="projects__card-photo projects__card-photo-3">
+                            <a class="projects__card-photo-link" href="https://github.com/Anchorite1001/project2-frontend" target=”_blank" >
+                                CLICK ME!
+                            </a>
+                        </div>
+                    </div>
+                   
                     
                     <div class="projects__btn">
                         <a href=https://github.com/Anchorite1001/project2-frontend" target=”_blank”>
@@ -166,22 +194,29 @@
 
                 <div class="projects__card">
                     <p class="projects__card-title">TIC TAC TOE</p>
-                    <a href="https://little-chi-mai.github.io/project0/" target=”_blank" >
+                    <div class="projects__card-pho">
+                        <div class="projects__card-photo projects__card-photo-4">
+                            <a class="projects__card-photo-link" href="https://little-chi-mai.github.io/project0/" target=”_blank" >
+                                CLICK ME!
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <a href="https://little-chi-mai.github.io/project0/" target=”_blank" >
                         <img class="projects__card-photo" src="img/tic-tac-toe.png" alt="photo of the first project">
-                    </a>
+                    </a> -->
                     
                     <div class="projects__btn">
                         <a href="https://little-chi-mai.github.io/project0/" target=”_blank”>
-                            <button class="projects__btn-demo">Live demo</button>
+                            <button class="projects__btn-d projects__btn-demo">Live demo</button>
                         </a>
 
                         <a href="https://github.com/little-chi-mai/project0" target=”_blank”>
-                            <button class="projects__btn-git">Source code</button>
+                            <button class="projects__btn-d projects__btn-git"><span>Source code</span></button>
                         </a>
                     </div>
 
                     <div class="projects__description">
-                        <p>My first project at General Assembly Australia. This is a classic game that has been designed to play between two players and let them freely choose their tokens. The condition checking algorithm was built to perform efficiently and to be able to keep track of multiple game rounds.</p>
+                        <p>This is a classic game that has been designed to play between two players and let them freely choose their tokens. The condition checking algorithm was built to perform efficiently and to be able to keep track of multiple rounds.</p>
 
                         <p> 
                             <strong>#JavaScript/jQuery/HTML/CSS</strong>

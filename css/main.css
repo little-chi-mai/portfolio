@@ -36,7 +36,7 @@ hr {
   align-items: center;
   position: fixed;
   top: 0;
-  transition: top 0.4s;
+  transition: top 0.5s ease-in-out;
   z-index: 100; }
   .navigator__logo {
     height: 6rem; }
@@ -51,8 +51,8 @@ hr {
   fill: white; }
 
 .footer-nav__wrap-icon:hover {
-  transition: 0.3s;
-  height: 3.2rem; }
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1); }
 
 .scrolling-box {
   display: block;
@@ -132,16 +132,66 @@ hr {
     margin: 2rem;
     padding: 2rem 2rem;
     background-color: #e9e6e6;
-    color: #242424; }
+    color: #242424;
+    transition: all 0.5s ease-in-out; }
     .projects__card-title {
       font-weight: 800;
       font-size: 2.5rem;
       color: #a85e0a; }
-    .projects__card-photo {
-      max-width: 98%; }
-    .projects__card-photo:hover {
-      transition: 0.3s;
-      opacity: 0.8; }
+    .projects__card-pho {
+      width: 98%;
+      height: 30rem;
+      transition: all 0.5s;
+      overflow: hidden; }
+      .projects__card-photo {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        background-position: center; }
+        .projects__card-photo-1 {
+          background-image: url("../img/furnique-2.png"); }
+        .projects__card-photo-2 {
+          background-image: url("../img/foodhub.png"); }
+        .projects__card-photo-3 {
+          background-image: url("../img/i-feel-like.png"); }
+        .projects__card-photo-4 {
+          background-image: url("../img/tic-tac-toe.png"); }
+        .projects__card-photo-link {
+          display: none;
+          font-size: 35px;
+          color: #ffffff;
+          text-align: center;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 50px;
+          cursor: pointer;
+          text-decoration: none; }
+      .projects__card-photo:hover {
+        transform: scale(1.1); }
+      .projects__card-photo:hover a,
+      .projects__card-photo:focus a {
+        display: block; }
+      .projects__card-photo:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(49, 41, 41, 0.911); }
+    .projects__card-pho:hover .projects__card-photo:before,
+    .projects__card-pho:focus .projects__card-photo:before {
+      display: block; }
   .projects__btn {
     display: flex;
     align-content: space-around;
@@ -157,7 +207,7 @@ hr {
     border: none;
     margin: 0.5rem; }
   .projects__btn-demo:hover {
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
     background-color: #ffa41c; }
   .projects__btn-git {
     border-radius: 5rem;
@@ -167,12 +217,13 @@ hr {
     border: none;
     margin: 0.5rem; }
   .projects__btn-git:hover {
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
     background-color: #474545; }
   .projects__description {
     text-align: left;
     margin-top: 0;
-    padding-top: 0; }
+    padding-top: 0;
+    min-height: 25rem; }
 
 #recent_project {
   width: 100vh; }
@@ -224,4 +275,59 @@ hr {
       margin: 2rem 5rem; }
     .footer__wrap-icon:hover {
       transition: 0.3s;
-      height: 5.4rem; }
+      transform: scale(1.1); }
+
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px; }
+
+.container-pic {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px; }
+
+.container-pic:after {
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%; }
+
+.container-pic:hover {
+  transform: scale(1); }
+
+.container-inner {
+  clip-path: path("M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z");
+  position: relative;
+  transform-origin: 50%;
+  top: -200px; }
+
+.circle {
+  background-color: #fee7d3;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 430px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px; }
+
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.container-pic:hover .img {
+  transform: translateY(0) scale(1.2); }
+
+.img1 {
+  top: 164px;
+  width: 450px; }
