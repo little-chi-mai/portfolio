@@ -3,6 +3,14 @@
   min-height: 50vh;
   padding: auto 5vh;
   color: white;
+  transition: color 1s ease-in-out;
+
+  &:hover &__mai-story {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    // color: bisque;
+  }
+
   &__mai {
     padding: 10%;
     margin: 2vh;
@@ -14,6 +22,7 @@
 
   &__mai-story {
     text-align: left;
+    transition: all 0.3s ease-in-out;
   }
 }
 

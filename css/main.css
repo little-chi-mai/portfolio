@@ -4,7 +4,11 @@
   background-color: #3bab87;
   min-height: 50vh;
   padding: auto 5vh;
-  color: white; }
+  color: white;
+  transition: color 1s ease-in-out; }
+  .about:hover .about__mai-story {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out; }
   .about__mai {
     padding: 10%;
     margin: 2vh;
@@ -13,7 +17,8 @@
     flex-wrap: wrap;
     align-items: center; }
   .about__mai-story {
-    text-align: left; }
+    text-align: left;
+    transition: all 0.3s ease-in-out; }
 
 .person {
   align-items: center;
@@ -75,9 +80,16 @@
   width: 100%;
   grid-template-rows: repeat(2, minmax(60vh, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
-  grid-auto-rows: minmax(60vh, 1fr); }
+  grid-auto-rows: minmax(60vh, 1fr);
+  transition: all 0.5s ease-in-out; }
   .projects__cards p {
     margin: 0; }
+  .projects__cards-all {
+    transition: all 0.5s ease-in-out; }
+  .projects__cards-all:hover .projects__description,
+  .projects__cards-all:hover .projects__cards-pho,
+  .projects__cards-all:hover .projects__cards-title {
+    transform: scale(1.05); }
   .projects__cards-1 {
     background-color: #e8c3b9;
     display: flex;
@@ -109,7 +121,8 @@
     font-size: 3rem !important;
     padding: 0;
     margin: 0;
-    margin-top: 0.5vh; }
+    margin-top: 2vh;
+    transition: all 0.5s ease-in-out; }
   .projects__cards-pho {
     width: 78%;
     height: 30vh;
@@ -148,7 +161,8 @@
         right: 0;
         height: 50px;
         cursor: pointer;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; }
       .projects__cards-photo-link:hover {
         transform: none !important; }
     .projects__cards-photo:hover {
@@ -205,7 +219,8 @@
   text-align: left;
   margin: 0;
   padding: 0 10%;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s ease-in-out; }
 
 .technologies {
   background-color: #b1d8e2;
@@ -214,13 +229,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
+  .technologies:hover .technologies__icon {
+    transform: scale(1.1); }
   .technologies__icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 70%;
-    padding: 10%; }
+    padding: 10%;
+    transition: all 0.5s ease-in-out; }
     .technologies__icon-tech {
       height: 5rem;
       width: 12rem;
@@ -241,7 +259,11 @@ font-family: 'Roboto Slab', serif; */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out; }
+
+a {
+  transition: all 0.3s ease-out; }
 
 a:hover {
   transform: scale(1.2);
@@ -294,11 +316,12 @@ hr {
   align-items: center;
   position: fixed;
   top: 0;
-  transition: top 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-bottom: 2px solid whitesmoke;
   z-index: 10; }
   .navigator__logo {
-    height: 6rem; }
+    height: 6rem;
+    transition: all 0.5s ease-in-out; }
   .navigator__link {
     color: #fff;
     margin: 0 1rem;
@@ -307,7 +330,8 @@ hr {
 .footer-nav__wrap-icon {
   height: 3rem;
   margin: 1rem 2rem;
-  fill: white; }
+  fill: white;
+  transition: all 0.3s ease-in-out; }
 
 .footer-nav__wrap-icon:hover {
   transition: all 0.3s ease-in-out;
@@ -325,11 +349,14 @@ hr {
   color: #1a1a1a;
   min-height: 95vh;
   padding: 4vw; }
+  .home:hover .home__mai {
+    transform: scale(1.08); }
   .home__photo {
     height: 50vh; }
   .home__mai {
     text-align: left;
-    margin: 5rem; }
+    margin: 5rem;
+    transition: all 0.5s ease-in-out; }
     .home__mai-name {
       font-size: 6rem;
       text-transform: uppercase; }

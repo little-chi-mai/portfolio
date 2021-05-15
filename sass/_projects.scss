@@ -7,9 +7,20 @@
     grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
 
     grid-auto-rows: minmax(60vh, 1fr);
+    transition: all 0.5s ease-in-out;
 
     & p {
       margin: 0;
+    }
+
+    &-all {
+      transition: all 0.5s ease-in-out;
+    }
+
+    &-all:hover .projects__description,
+    &-all:hover &-pho,
+    &-all:hover &-title {
+      transform: scale(1.05);
     }
 
     &-1 {
@@ -53,7 +64,8 @@
       font-size: 3rem !important;
       padding: 0;
       margin: 0;
-      margin-top: 0.5vh;
+      margin-top: 2vh;
+      transition: all 0.5s ease-in-out;
     }
 
     // reference https://css-tricks.com/zooming-background-images/
@@ -107,6 +119,7 @@
           height: 50px;
           cursor: pointer;
           text-decoration: none;
+          transition: all 0.3s ease-in-out;
         }
 
         &-link:hover {
@@ -183,6 +196,7 @@
     padding: 0 10%;
     text-align: center;
     // min-height: 25rem;
+    transition: all 0.5s ease-in-out;
   }
 }
 

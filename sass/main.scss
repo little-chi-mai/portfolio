@@ -17,6 +17,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  transition: all 0.3s ease-out;
 }
 
 a:hover {
@@ -84,13 +89,14 @@ hr {
   align-items: center;
   position: fixed;
   top: 0;
-  transition: top 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-bottom: 2px solid whitesmoke;
 
   z-index: 10;
 
   &__logo {
     height: 6rem;
+    transition: all 0.5s ease-in-out;
   }
 
   &__link {
@@ -105,6 +111,7 @@ hr {
     height: 3rem;
     margin: 1rem 2rem;
     fill: white;
+    transition: all 0.3s ease-in-out;
   }
 
   &-icon:hover {
@@ -147,6 +154,10 @@ hr {
   min-height: 95vh;
   padding: 4vw;
 
+  &:hover &__mai {
+    transform: scale(1.08);
+  }
+
   &__photo {
     height: 50vh;
   }
@@ -154,6 +165,7 @@ hr {
   &__mai {
     text-align: left;
     margin: 5rem;
+    transition: all 0.5s ease-in-out;
 
     &-name {
       font-size: 6rem;

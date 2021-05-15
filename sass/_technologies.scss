@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
 
+  &:hover &__icon {
+    transform: scale(1.1);
+  }
+
   &__icon {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +18,7 @@
     width: 70%;
     // flex: 1 0 20%;
     padding: 10%;
+    transition: all 0.5s ease-in-out;
 
     &-tech {
       height: 5rem;
