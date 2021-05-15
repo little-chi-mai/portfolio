@@ -1,0 +1,164 @@
+.projects {
+  background-color: rgb(70, 69, 69);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+  flex-direction: row;
+  min-height: 100vh;
+  color: rgb(229, 226, 226);
+  // height: 300px;
+
+  border: rgb(34, 34, 34);
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 1 46%;
+
+    max-width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.212);
+    border-radius: 2%;
+    margin: 2rem;
+    padding: 2rem 2rem;
+    background-color: rgb(233, 230, 230);
+    color: rgb(36, 36, 36);
+    transition: all 0.5s ease-in-out;
+
+    &-title {
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: rgb(168, 94, 10);
+    }
+
+    // reference https://css-tricks.com/zooming-background-images/
+    &-pho {
+      width: 98%;
+      height: 30rem;
+      transition: all 0.5s;
+      // to hide the edge
+      overflow: hidden;
+      &to {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        // background-color: black;
+        background-position: center;
+        &-1 {
+          background-image: url("../img/furnique-2.png");
+        }
+
+        &-2 {
+          background-image: url("../img/foodhub.png");
+        }
+
+        &-3 {
+          background-image: url("../img/i-feel-like.png");
+        }
+
+        &-4 {
+          background-image: url("../img/tic-tac-toe.png");
+        }
+
+        &-link {
+          display: none;
+          font-size: 35px;
+          color: #ffffff;
+          text-align: center;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 50px;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+      &to:hover {
+        transform: scale(1.1);
+      }
+
+      &to:hover a,
+      &to:focus a {
+        display: block;
+      }
+
+      &to:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(49, 41, 41, 0.911);
+      }
+    }
+
+    &-pho:hover .projects__card-photo:before,
+    &-pho:focus .projects__card-photo:before {
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  &__btn-demo {
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(253, 132, 18);
+    color: white;
+    border: none;
+    margin: 0.5rem;
+  }
+
+  &__btn-demo:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 164, 28);
+  }
+
+  &__btn-git {
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(54, 51, 51);
+    color: white;
+    border: none;
+    margin: 0.5rem;
+  }
+
+  &__btn-git:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(71, 69, 69);
+  }
+
+  &__description {
+    text-align: left;
+    margin-top: 0;
+    padding-top: 0;
+    min-height: 25rem;
+  }
+}
+
+// #recent_project {
+//   width: 100vh;
+// }
