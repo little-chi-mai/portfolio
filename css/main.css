@@ -7,7 +7,7 @@
   color: white;
   transition: color 1s ease-in-out; }
   .about:hover .about__mai-story {
-    transform: scale(1.05);
+    padding: 0.3vh;
     transition: all 0.3s ease-in-out; }
   .about__mai {
     padding: 10%;
@@ -350,7 +350,8 @@ hr {
   min-height: 95vh;
   padding: 4vw; }
   .home:hover .home__mai {
-    transform: scale(1.08); }
+    transform: scale(1.08);
+    transition: all 0.5s ease-in-out; }
   .home__photo {
     height: 50vh; }
   .home__mai {
