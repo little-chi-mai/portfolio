@@ -1,49 +1,69 @@
 .projects {
-  background-color: rgb(70, 69, 69);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: space-around;
-  flex-direction: row;
-  min-height: 100vh;
-  color: rgb(229, 226, 226);
-  // height: 300px;
+  &__cards {
+    display: grid;
+    width: 100%;
 
-  border: rgb(34, 34, 34);
+    grid-template-rows: repeat(2, minmax(60vh, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
 
-  &__card {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 0 1 46%;
+    grid-auto-rows: minmax(60vh, 1fr);
 
-    max-width: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.212);
-    border-radius: 2%;
-    margin: 2rem;
-    padding: 2rem 2rem;
-    background-color: rgb(233, 230, 230);
-    color: rgb(36, 36, 36);
-    transition: all 0.5s ease-in-out;
+    & p {
+      margin: 0;
+    }
+
+    &-1 {
+      background-color: #e8c3b9;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-2 {
+      background-color: #224a54;
+      color: rgb(233, 233, 233);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-3 {
+      background-color: #292929;
+      color: rgb(233, 233, 233);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-4 {
+      background-color: #f3e9c6;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     &-title {
       font-weight: 800;
-      font-size: 2.5rem;
-      color: rgb(168, 94, 10);
+      font-size: 3rem !important;
+      padding: 0;
+      margin: 0;
+      margin-top: 0.5vh;
     }
 
     // reference https://css-tricks.com/zooming-background-images/
     &-pho {
-      width: 98%;
-      height: 30rem;
+      width: 78%;
+      height: 30vh;
       transition: all 0.5s;
       // to hide the edge
       overflow: hidden;
+
       &to {
         height: 100%;
         width: 100%;
@@ -72,6 +92,8 @@
         }
 
         &-link {
+          font-size: 3rem !important;
+          padding: 0 4vw !important;
           display: none;
           font-size: 35px;
           color: #ffffff;
@@ -85,6 +107,10 @@
           height: 50px;
           cursor: pointer;
           text-decoration: none;
+        }
+
+        &-link:hover {
+          transform: none !important;
         }
       }
       &to:hover {
@@ -104,12 +130,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(49, 41, 41, 0.911);
+        background-color: rgba(61, 61, 61, 0.911);
       }
     }
 
-    &-pho:hover .projects__card-photo:before,
-    &-pho:focus .projects__card-photo:before {
+    &-pho:hover .projects__cards-photo:before,
+    &-pho:focus .projects__cards-photo:before {
       display: block;
     }
   }
@@ -153,9 +179,10 @@
 
   &__description {
     text-align: left;
-    margin-top: 0;
-    padding-top: 0;
-    min-height: 25rem;
+    margin: 0;
+    padding: 0 10%;
+    text-align: center;
+    // min-height: 25rem;
   }
 }
 

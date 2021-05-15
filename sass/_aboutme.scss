@@ -1,14 +1,15 @@
 .about {
   background-color: #3bab87;
-  min-height: 85vh;
+  min-height: 50vh;
   padding: auto 5vh;
   color: white;
   &__mai {
-    padding: 2vh;
+    padding: 10%;
     margin: 2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   &__mai-story {
@@ -29,6 +30,7 @@
   transform: scale(0.7);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 400px;
+  // margin-top: 20vh;
 }
 .container-pic:after {
   // background-color: #f2f2f2;
