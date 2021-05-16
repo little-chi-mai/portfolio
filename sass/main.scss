@@ -231,6 +231,11 @@ hr {
 @media (min-width: 376px) and (max-width: 640px) {
   .home {
     padding-top: 15vh;
+
+    &__mai-name {
+      margin-top: 0;
+      margin-bottom: 3vh;
+    }
   }
 
   .title {
@@ -239,9 +244,16 @@ hr {
     left: 2.5rem;
   }
 
-  // .navigator {
-  //   width: 100%;
-  // }
+  .navigator {
+    width: 100%;
+  }
+
+  .projects__cards-all {
+    padding: 0 10vw;
+  }
+  .projects__description p {
+    text-align: left;
+  }
 }
 
 @media (max-width: 375px) {
@@ -256,6 +268,11 @@ hr {
   }
   .home {
     padding-top: 15vh;
+
+    &__mai-name {
+      margin-top: 0;
+      margin-bottom: 3vh;
+    }
   }
 
   .title {
@@ -271,7 +288,7 @@ hr {
   .projects__cards-all {
     padding: 0 10vw;
   }
-  .projects__description {
+  .projects__description p {
     text-align: left;
   }
 }

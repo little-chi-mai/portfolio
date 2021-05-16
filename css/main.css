@@ -398,10 +398,19 @@ hr {
 @media (min-width: 376px) and (max-width: 640px) {
   .home {
     padding-top: 15vh; }
+    .home__mai-name {
+      margin-top: 0;
+      margin-bottom: 3vh; }
   .title {
     font-size: 8rem;
     top: -7.5rem;
-    left: 2.5rem; } }
+    left: 2.5rem; }
+  .navigator {
+    width: 100%; }
+  .projects__cards-all {
+    padding: 0 10vw; }
+  .projects__description p {
+    text-align: left; } }
 
 @media (max-width: 375px) {
   .container {
@@ -412,6 +421,9 @@ hr {
     margin: 0 0.5vw; }
   .home {
     padding-top: 15vh; }
+    .home__mai-name {
+      margin-top: 0;
+      margin-bottom: 3vh; }
   .title {
     font-size: 8rem;
     top: -7.5rem;
@@ -420,5 +432,5 @@ hr {
     width: 100%; }
   .projects__cards-all {
     padding: 0 10vw; }
-  .projects__description {
+  .projects__description p {
     text-align: left; } }
