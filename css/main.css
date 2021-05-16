@@ -85,7 +85,8 @@
   .projects__cards p {
     margin: 0; }
   .projects__cards-all {
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    padding: 4vh 0; }
   .projects__cards-all:hover .projects__description,
   .projects__cards-all:hover .projects__cards-pho,
   .projects__cards-all:hover .projects__cards-title {
