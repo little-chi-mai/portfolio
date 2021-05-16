@@ -7,7 +7,6 @@
   color: white;
   transition: color 1s ease-in-out; }
   .about:hover .about__mai-story {
-    padding: 0.3vh;
     transition: all 0.3s ease-in-out; }
   .about__mai {
     padding: 10%;
@@ -86,37 +85,24 @@
     margin: 0; }
   .projects__cards-all {
     transition: all 0.5s ease-in-out;
-    padding: 4vh 0; }
+    padding: 4vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .projects__cards-all:hover .projects__description,
   .projects__cards-all:hover .projects__cards-pho,
   .projects__cards-all:hover .projects__cards-title {
     transform: scale(1.05); }
   .projects__cards-1 {
-    background-color: #e8c3b9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    background-color: #e8c3b9; }
   .projects__cards-2 {
     background-color: #224a54;
-    color: #e9e9e9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    color: #e9e9e9; }
   .projects__cards-3 {
     background-color: #292929;
-    color: #e9e9e9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    color: #e9e9e9; }
   .projects__cards-4 {
-    background-color: #f3e9c6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    background-color: #f3e9c6; }
   .projects__cards-title {
     font-weight: 800;
     font-size: 3rem !important;
@@ -370,7 +356,6 @@ hr {
         height: 3rem; }
 
 .footer {
-  height: 20vh;
   width: 100%;
   background-color: #d87874;
   color: #fcf8f4;
@@ -434,3 +419,14 @@ hr {
     padding: 0 10vw; }
   .projects__description p {
     text-align: left; } }
+
+@media (orientation: landscape) {
+  .projects__cards {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, minmax(60vh, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(60vh, 1fr);
+    transition: all 0.3s ease-in-out; }
+    .projects__cards-all {
+      align-items: center; } }

@@ -16,6 +16,11 @@
     &-all {
       transition: all 0.5s ease-in-out;
       padding: 4vh 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: stretch;
     }
 
     &-all:hover .projects__description,
@@ -27,37 +32,32 @@
     &-1 {
       background-color: #e8c3b9;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
     }
 
     &-2 {
       background-color: #224a54;
       color: rgb(233, 233, 233);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
     }
 
     &-3 {
       background-color: #292929;
       color: rgb(233, 233, 233);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
     }
 
     &-4 {
       background-color: #f3e9c6;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     &-title {
