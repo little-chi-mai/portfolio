@@ -3,11 +3,16 @@
     display: grid;
     width: 100%;
 
-    grid-template-rows: repeat(2, minmax(60vh, 1fr));
+    grid-template-rows:
+      minmax(min-content, max-content)
+      minmax(min-content, max-content)
+      minmax(min-content, max-content) !important;
     grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
 
     grid-auto-rows: minmax(60vh, 1fr);
     transition: all 0.3s ease-in-out;
+
+    grid-gap: 1vh;
 
     & p {
       margin: 0;
@@ -60,13 +65,40 @@
       background-color: #f3e9c6;
     }
 
+    &-5 {
+      background-color: rgb(134, 131, 175);
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      // height: 50vh !important;
+    }
+
     &-title {
       font-weight: 800;
-      font-size: 3rem !important;
+      font-size: 4rem !important;
       padding: 0;
       margin: 0;
-      margin-top: 2vh;
+      margin-top: 2vh !important;
       transition: all 0.5s ease-in-out;
+
+      &-1 {
+        font-family: "Girassol", cursive;
+      }
+
+      &-2 {
+        font-family: "Indie Flower", cursive;
+      }
+
+      &-3 {
+        font-family: "Sacramento", cursive;
+      }
+
+      &-4 {
+        font-family: "Cabin Sketch", cursive;
+      }
+
+      &-5 {
+        font-family: "Amatic SC", cursive;
+      }
     }
 
     // reference https://css-tricks.com/zooming-background-images/
@@ -102,6 +134,10 @@
 
         &-4 {
           background-image: url("../img/tic-tac-toe.png");
+        }
+
+        &-5 {
+          background-image: url("../img/molenir2.png");
         }
 
         &-link {
