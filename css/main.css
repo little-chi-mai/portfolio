@@ -80,8 +80,8 @@
 .projects__cards {
   display: grid;
   width: 100%;
-  grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) !important;
-  grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
+  grid-template-rows: repeat(3, minmax(min-content, max-content)) !important;
+  grid-template-columns: repeat(auto-fill, minmax(60vh, 1fr));
   grid-auto-rows: minmax(60vh, 1fr);
   transition: all 0.3s ease-in-out;
   grid-gap: 1vh; }
@@ -444,7 +444,7 @@ hr {
   .projects__cards {
     display: grid;
     width: 100%;
-    grid-template-rows: repeat(2, minmax(60vh, 1fr));
+    grid-template-rows: repeat(3, minmax(60vh, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-rows: minmax(60vh, 1fr);
     transition: all 0.3s ease-in-out; }

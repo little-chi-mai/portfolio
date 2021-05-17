@@ -3,11 +3,8 @@
     display: grid;
     width: 100%;
 
-    grid-template-rows:
-      minmax(min-content, max-content)
-      minmax(min-content, max-content)
-      minmax(min-content, max-content) !important;
-    grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
+    grid-template-rows: repeat(3, minmax(min-content, max-content)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(60vh, 1fr));
 
     grid-auto-rows: minmax(60vh, 1fr);
     transition: all 0.3s ease-in-out;
