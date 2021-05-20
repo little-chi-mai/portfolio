@@ -5,7 +5,6 @@
 .about {
   background-color: #3bab87;
   min-height: 50vh;
-  padding: auto 5vh;
   color: white;
   transition: color 1s ease-in-out; }
   .about:hover .about__mai-story {
@@ -13,7 +12,6 @@
     transition: all 0.3s ease-in-out; }
   .about__mai {
     padding: 10%;
-    margin: 2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,11 +90,10 @@
     padding: 4vh 0;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  .projects__cards-all:hover .projects__description,
-  .projects__cards-all:hover .projects__cards-pho,
-  .projects__cards-all:hover .projects__cards-title {
-    transform: scale(1.05); }
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .projects__cards-all:hover {
+    transform: scale(1.02); }
   .projects__cards-1 {
     background-color: #e8c3b9; }
   .projects__cards-2 {
@@ -237,7 +234,7 @@
   align-items: center;
   justify-content: center; }
   .technologies:hover .technologies__icon {
-    transform: scale(1.1); }
+    transform: scale(1.02); }
   .technologies__icon {
     display: flex;
     flex-wrap: wrap;
@@ -267,7 +264,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 a {
   transition: all 0.3s ease-out; }
@@ -344,6 +341,9 @@ hr {
 .footer-nav__wrap-icon:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.3); }
+
+.scrolling-box__section {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .home {
   background-image: url(../img/about.png);

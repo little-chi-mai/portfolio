@@ -21,7 +21,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -142,6 +142,7 @@ hr {
     // scroll-margin-top: 20rem;
 
     // min-height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
