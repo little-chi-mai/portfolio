@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin+Sketch:wght@700&family=Indie+Flower&family=Raleway&family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
 .about {
   background-color: #3bab87;
   min-height: 50vh;
@@ -357,9 +358,6 @@ hr {
   color: #1a1a1a;
   min-height: 95vh;
   padding: 4vw; }
-  .home:hover .home__mai {
-    transform: scale(1.08);
-    transition: all 0.5s ease-in-out; }
   .home__photo {
     height: 50vh; }
   .home__mai {
@@ -368,7 +366,8 @@ hr {
     transition: all 0.5s ease-in-out; }
     .home__mai-name {
       font-size: 6rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "Mountains of Christmas", cursive; }
     .home__mai-location {
       display: flex;
       align-items: center; }
@@ -450,3 +449,26 @@ hr {
     transition: all 0.3s ease-in-out; }
     .projects__cards-all {
       align-items: center; } }
+
+.wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.typing-demo {
+  width: 10ch;
+  animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
