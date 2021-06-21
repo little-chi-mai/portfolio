@@ -110,8 +110,7 @@
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-        // background-color: black;
-        background-position: center;
+        background-position: top;
         &-1 {
           background-image: url("../img/furnique-2.png");
         }
