@@ -476,11 +476,11 @@
 
 .balloon-2 {
   margin-top: 2rem;
-  align-self: start;
+  align-self: flex-start;
   max-width: 40%; }
 
 .balloon-1 {
-  align-self: end;
+  align-self: flex-end;
   max-width: 70%; }
 
 @media (min-width: 1024px) {
