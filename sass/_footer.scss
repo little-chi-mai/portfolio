@@ -16,7 +16,7 @@
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   &__text {
-    padding-top: 5vh;
+    // padding-top: 5vh;
     width: 100%;
     text-align: center;
     font-size: 3rem;
@@ -48,14 +48,14 @@
 
 .balloon {
   &-2 {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     align-self: flex-start;
-    max-width: 40%;
+    max-width: 20%;
   }
 
   &-1 {
     align-self: flex-end;
-    max-width: 70%;
+    max-width: 30%;
   }
 }
 
@@ -65,27 +65,37 @@
 //   }
 // }
 
-@media (min-width: 1024px) {
-  .balloon-1 {
-    max-width: 50%;
-  }
-}
+// @media (min-width: 1024px) {
+//   .balloon {
+//     &-2 {
+//       max-width: 20%;
+//     }
 
-@media (min-width: 1200px) {
+//     &-1 {
+//       max-width: 30%;
+//     }
+//   }
+// }
+
+@media (min-width: 1024px) {
   .footer {
-    display: flex;
+    // display: flex;
     flex-direction: row;
+    // align-items: space-between;
+    // justify-content: space-evenly;
+    padding: 7%;
     &__text {
       text-align: left;
     }
   }
   .balloon {
     &-2 {
-      max-width: 30rem;
+      width: 15%;
+      margin-top: 0;
     }
 
     &-1 {
-      max-width: 40%;
+      width: 25%;
     }
   }
 }

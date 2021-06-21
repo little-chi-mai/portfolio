@@ -188,6 +188,19 @@
     background-color: rgb(255, 164, 28);
   }
 
+  &__btn-hi {
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    background-color: #ffc911;
+    color: rgb(35, 43, 65);
+    border: none;
+    margin: 0.5rem;
+  }
+
+  &__btn-hi:hover {
+    background-color: rgb(255, 187, 0);
+  }
+
   &__btn-git {
     border-radius: 5rem;
     padding: 1rem 1.5rem;

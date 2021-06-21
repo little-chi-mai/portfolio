@@ -246,10 +246,10 @@
       .about__mai-section .ball {
         max-width: 25rem; } }
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .about__mai {
     display: grid;
-    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
     grid-template-columns: 3fr 1fr 1fr; }
     .about__mai-section {
       min-width: 0;
@@ -258,6 +258,12 @@
       .about__mai-section-1 {
         grid-column: 1 / 2;
         grid-row: 1 / 5; }
+      .about__mai-section-2 {
+        grid-column: -3 / -1;
+        grid-row: 1 / 2; }
+      .about__mai-section-5 {
+        grid-column: -3 / -1;
+        grid-row: -2 / -1; }
       .about__mai-section .arrow,
       .about__mai-section .bulk,
       .about__mai-section .cake,
@@ -391,6 +397,17 @@
 .projects__btn-demo:hover {
   background-color: #ffa41c; }
 
+.projects__btn-hi {
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  background-color: #ffc911;
+  color: #232b41;
+  border: none;
+  margin: 0.5rem; }
+
+.projects__btn-hi:hover {
+  background-color: #ffbb00; }
+
 .projects__btn-git {
   border-radius: 5rem;
   padding: 1rem 1.5rem;
@@ -457,7 +474,6 @@
   margin-bottom: 2vh;
   padding: 10%; }
   .footer__text {
-    padding-top: 5vh;
     width: 100%;
     text-align: center;
     font-size: 3rem; }
@@ -477,28 +493,24 @@
       transform: scale(1.2); }
 
 .balloon-2 {
-  margin-top: 2rem;
   align-self: flex-start;
-  max-width: 40%; }
+  max-width: 20%; }
 
 .balloon-1 {
   align-self: flex-end;
-  max-width: 70%; }
+  max-width: 30%; }
 
 @media (min-width: 1024px) {
-  .balloon-1 {
-    max-width: 50%; } }
-
-@media (min-width: 1200px) {
   .footer {
-    display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 7%; }
     .footer__text {
       text-align: left; }
   .balloon-2 {
-    max-width: 30rem; }
+    width: 15%;
+    margin-top: 0; }
   .balloon-1 {
-    max-width: 40%; } }
+    width: 25%; } }
 
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Slab', serif; */
