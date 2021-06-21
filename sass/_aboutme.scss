@@ -1,20 +1,8 @@
 .about {
-  // background-color: #3bab87;
   min-height: 50vh;
   color: white;
-  // transition: color 0.3s ease-in-out;
-
-  // &:hover &__mai-story {
-  //   // transform: scale(1.05);
-  //   padding: 0.3vh;
-  //   transition: all 0.3s ease-in-out;
-
-  //   // color: bisque;
-  // }
 
   &__mai {
-    // padding: 10%;
-    // margin: 2vh;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,9 +18,7 @@
 
       padding: 10%;
       padding-top: 0;
-      // display: grid;
-      // grid-template-rows: repeat(3, 200px);
-      // grid-template-columns: repeat(2, 1fr);
+      width: 100%;
 
       &-1 {
         background-color: #3bab87;
@@ -53,28 +39,23 @@
       }
 
       &-5 {
-        background-color: #72adb4;
+        background-color: #e0f7ea;
+        // background-color: #ffda62;
+        color: rgb(43, 62, 83);
       }
     }
+  }
+
+  &__mai-story {
+    text-align: left;
+    padding-top: 2rem;
   }
   .baymax,
   .arrow,
   .bulk,
   .cake,
   .ball {
-    // position: absolute;
-    // top: -40vh;
-    max-width: 100%;
-
-    // left: 30vw;
-    // // left: 0;
-    // z-index: 0;
-    // width: 100px;
-  }
-
-  &__mai-story {
-    text-align: left;
-    padding-top: 2rem;
+    width: 70%;
   }
 }
 
@@ -94,7 +75,6 @@
   // margin-top: 20vh;
 }
 .container-pic:after {
-  // background-color: #f2f2f2;
   content: "";
   height: 10px;
   position: absolute;
@@ -139,6 +119,15 @@
   width: 450px;
 }
 
+@media (min-width: 540px) {
+  .arrow,
+  .bulk,
+  .cake,
+  .ball {
+    max-width: 25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .about__mai {
     display: grid;
@@ -153,15 +142,7 @@
       }
 
       .baymax {
-        // max-height: 40rem;
         max-width: 80rem;
-      }
-
-      .arrow,
-      .bulk,
-      .cake,
-      .ball {
-        max-width: 30rem;
       }
     }
   }
@@ -182,18 +163,6 @@
       &-1 {
         grid-column: 1 / 2;
         grid-row: 1 / 5;
-      }
-
-      .baymax {
-        // max-height: 40rem;
-        // max-width: 80rem;
-      }
-
-      .arrow,
-      .bulk,
-      .cake,
-      .ball {
-        max-width: 25rem;
       }
     }
   }
@@ -235,7 +204,7 @@
       .bulk,
       .cake,
       .ball {
-        max-width: 25rem;
+        width: 25rem;
       }
     }
   }
