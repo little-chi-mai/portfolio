@@ -24,17 +24,17 @@ font-family: 'Roboto Slab', serif; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
-  transition: all 0.2s ease-in-out;
 }
 
 a {
-  transition: all 0.2s ease-out;
+  // transition: all 0.2s ease-out;
   cursor: pointer;
   text-decoration: none;
 }
