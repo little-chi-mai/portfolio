@@ -1,22 +1,21 @@
 .projects {
+  // width: 100%;
   &__cards {
-    display: grid;
-    width: 100%;
+    // display: grid;
+    // width: 80%;
 
-    grid-template-rows: repeat(3, minmax(min-content, max-content)) !important;
-    grid-template-columns: repeat(auto-fill, minmax(60vh, 1fr));
+    // grid-template-rows: repeat(3, minmax(min-content, max-content));
+    // grid-template-columns: repeat(auto-fill, minmax(60vh, 1fr));
 
-    grid-auto-rows: minmax(60vh, 1fr);
-    transition: all 0.3s ease-in-out;
+    // grid-gap: 5vw;
 
-    grid-gap: 1vh;
-
-    & p {
-      margin: 0;
-    }
+    // margin: 10vw;
 
     &-all {
-      transition: all 0.5s ease-in-out;
+      min-width: 40vw;
+      min-height: 0;
+      // overflow: hidden;
+      transition: all 0.3s ease-in-out;
       padding: 4vh 0;
 
       display: flex;
@@ -26,16 +25,6 @@
 
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    // &-all:hover .projects__description,
-    // &-all:hover &-pho,
-    // &-all:hover &-title {
-    //   transform: scale(1.05);
-    // }
-
-    &-all:hover {
-      transform: scale(1.02);
     }
 
     &-1 {
@@ -71,8 +60,7 @@
 
     &-5 {
       background-color: rgb(134, 131, 175);
-      grid-row: 2/3;
-      grid-column: 1/-1;
+
       // height: 50vh !important;
     }
 
@@ -168,7 +156,7 @@
         }
       }
       &to:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
       }
 
       &to:hover a,
@@ -213,7 +201,6 @@
   }
 
   &__btn-demo:hover {
-    transition: all 0.3s ease-in-out;
     background-color: rgb(255, 164, 28);
   }
 
@@ -227,15 +214,14 @@
   }
 
   &__btn-git:hover {
-    transition: all 0.3s ease-in-out;
     background-color: rgb(71, 69, 69);
   }
 
-  &__description {
+  &__description > p {
     text-align: left;
     margin: 0;
     padding: 0 10%;
-    text-align: center;
+    // text-align: center;
     // min-height: 25rem;
     transition: all 0.5s ease-in-out;
   }
@@ -244,3 +230,20 @@
 // #recent_project {
 //   width: 100vh;
 // }
+
+.center {
+  text-align: center !important;
+}
+
+@media (min-width: 1024px) {
+  .projects__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+
+    &-1 {
+      grid-row: 1/2;
+      grid-column: 1/-1;
+    }
+  }
+}

@@ -8,31 +8,39 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+@import "navbar";
+@import "home";
 @import "aboutme";
 @import "projects";
-@import "technologies";
+@import "skills";
+@import "footer";
 
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a {
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease-out;
+  transform: scale(1.1);
 }
 
 p {
@@ -42,34 +50,38 @@ p {
   position: relative;
   z-index: 10;
   margin: 15vh auto;
+  .title {
+    font-size: 8rem;
+    color: black;
+    font-weight: 800;
+    font-family: "PT Serif";
+    // align-self: flex-start;
+    position: absolute;
+    top: -7.3rem;
+    left: 0;
+    z-index: 50;
+    // right: 0;
+    // left: 0 !important;
+  }
 }
 
-.title {
-  font-size: 10rem;
-  color: black;
-  font-weight: 800;
-  font-family: "PT Serif";
-  // align-self: flex-start;
-  position: absolute;
-  top: -9.3rem;
-  left: 0;
-  z-index: 50;
-  // left: 0 !important;
-}
 section {
   padding-top: 2rem;
 }
 
 .container {
   //   background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 1.9rem;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  margin: 0 10vw;
-  flex: 1 1 40%;
+  margin: 0 1vw;
+  flex: 1 1 auto;
+
+  min-height: 0;
+  overflow: hidden;
 }
 
 hr {
@@ -82,260 +94,30 @@ hr {
   width: 20rem;
 }
 
-.navigator {
-  background-color: rgb(44, 43, 43);
-  padding: 0.5rem 0;
-  text-align: center;
-  width: 100vw;
-
-  display: flex;
-  flex: 1 1 100%;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  position: fixed;
-  top: 0;
-  transition: all 0.5s ease-in-out;
-  border-bottom: 2px solid whitesmoke;
-
-  z-index: 100;
-
-  &__logo {
-    height: 6rem;
-    transition: all 0.5s ease-in-out;
-  }
-
-  &__link {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-}
-
-.footer-nav__wrap {
+.navigator__wrap {
   &-icon {
-    height: 3rem;
+    height: 2rem;
     margin: 1rem 2rem;
     fill: white;
     transition: all 0.3s ease-in-out;
   }
 
   &-icon:hover {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: scale(1.3);
   }
 }
 
 .scrolling-box {
-  // display: block;
-  // // overflow-y: scroll;
-  // // scroll-behavior: smooth;
+  display: flex;
 
-  // text-align: center;
-  // width: 100%;
-
-  // top: -250px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   &__section {
-    // overflow-y: scroll;
-    // scroll-margin-top: 20rem;
-
-    // min-height: 80vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-}
-
-.home {
-  // background-color: rgb(190, 119, 37);
-  background-image: url(../img/about.png);
-  // linear-gradient(rgba(121, 67, 82, 0.6));
-  background-size: cover;
-
-  background-position: left;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  color: rgb(26, 26, 26);
-  min-height: 95vh;
-  padding: 4vw;
-
-  // &:hover &__mai {
-  //   transform: scale(1.08);
-  //   transition: all 0.5s ease-in-out;
-  // }
-
-  &__photo {
-    height: 50vh;
-  }
-
-  &__mai {
-    text-align: left;
-    margin: 5rem;
-    transition: all 0.5s ease-in-out;
-
-    &-name {
-      font-size: 6rem;
-      text-transform: uppercase;
-      font-family: "Mountains of Christmas", cursive;
-    }
-
-    &-location {
-      display: flex;
-      // justify-content: center;
-      align-items: center;
-      // flex-wrap: wrap;
-
-      &-icon {
-        height: 3rem;
-      }
-    }
-  }
-}
-
-.footer {
-  // height: 20vh;
-  width: 100%;
-  background-color: #d87874;
-  color: rgb(252, 248, 244);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 auto;
-  margin: 1vh 10vw;
-  // flex-wrap: wrap;
-
-  &__text {
-    padding-top: 2vh;
-    width: 100%;
-    text-align: center;
-  }
-
-  &__contact {
-    width: 100%;
-  }
-
-  &__wrap {
-    display: flex;
-
-    // flex: 1 1 20%;
-    &-icon {
-      height: 5rem;
-      margin: 2rem 5vw;
-    }
-
-    &-icon-mail:hover {
-      transition: 0.3s;
-      transform: scale(1.2);
-    }
-  }
-}
-
-@media (min-width: 376px) and (max-width: 640px) {
-  .home {
-    padding-top: 15vh;
-
-    &__mai-name {
-      margin-top: 0;
-      margin-bottom: 3vh;
-    }
-  }
-
-  .title {
-    font-size: 8rem;
-    top: -7.5rem;
-    left: 2.5rem;
-  }
-
-  .navigator {
-    width: 100%;
-  }
-
-  .projects__cards-all {
-    padding: 0 10vw;
-  }
-  .projects__description p {
-    text-align: left;
-  }
-}
-
-@media (max-width: 375px) {
-  .container {
-    font-size: 1.7rem;
-    // flex: 2 2 auto;
-    min-width: 0;
-    min-height: 0;
-    overflow: hidden;
-    // flex-wrap: wrap;
-    margin: 0 0.5vw;
-  }
-  .home {
-    padding-top: 15vh;
-
-    &__mai-name {
-      margin-top: 0;
-      margin-bottom: 3vh;
-    }
-  }
-
-  .title {
-    font-size: 8rem;
-    top: -7.5rem;
-    left: 5.8rem;
-  }
-
-  .navigator {
-    width: 100%;
-  }
-
-  .projects__cards-all {
-    padding: 0 10vw;
-  }
-  .projects__description p {
-    text-align: left;
-  }
-}
-
-@media (orientation: landscape) {
-  .projects {
-    &__cards {
-      display: grid;
-      width: 100%;
-
-      grid-template-rows: repeat(3, minmax(60vh, 1fr));
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
-      grid-auto-rows: minmax(60vh, 1fr);
-      transition: all 0.3s ease-in-out;
-
-      &-all {
-        align-items: center;
-      }
-    }
-  }
-}
-
-.wrapper {
-  // height: 100vh;
-  /*This part is important for centering*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.typing-demo {
-  width: 10ch;
-  animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
 }
 
 @keyframes typing {
@@ -349,3 +131,27 @@ hr {
     border-color: transparent;
   }
 }
+
+// @media (min-width: 540px) {
+//   body {
+//     background-color: black;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   body {
+//     background-color: rgb(105, 20, 20);
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   body {
+//     background-color: rgb(199, 202, 13);
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   body {
+//     background-color: rgb(94, 69, 102);
+//   }
+// }

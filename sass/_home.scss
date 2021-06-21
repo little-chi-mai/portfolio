@@ -1,0 +1,131 @@
+.home {
+  background-color: #ffe6d6;
+  // background-image: url(../img/about.png);
+  // linear-gradient(rgba(121, 67, 82, 0.6));
+  background-size: cover;
+  width: 100%;
+
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+  color: rgb(26, 26, 26);
+  min-height: 100vh;
+  padding: 4vw;
+  min-width: 0;
+  overflow: hidden;
+
+  .laptop {
+    width: 90%;
+  }
+
+  &__photo {
+    height: 50vh;
+  }
+
+  &__mai {
+    // margin: 3rem auto;
+    margin-top: 10vh;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-in-out;
+    // flex: 0 1 35vw;
+    text-align: center;
+
+    &-title {
+      border-top: 2px solid black;
+      padding-top: 3rem;
+    }
+
+    &-location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // left: -1rem;
+      padding: 2rem;
+
+      &-icon {
+        height: 3rem;
+      }
+
+      &-sydney {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.type-demo__wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-name {
+    width: 10ch;
+    animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .home {
+    min-height: 85vh;
+    &__mai {
+      margin-top: 8rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    // width: 50%;
+
+    &__mai {
+      width: 40%;
+      max-width: 40rem;
+    }
+
+    .laptop {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    &__mai {
+      width: 40%;
+      max-width: 50rem;
+    }
+
+    .laptop {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    min-height: 95vh;
+    &__mai {
+      width: 40%;
+      max-width: 50rem;
+    }
+
+    .laptop {
+      width: 50%;
+    }
+  }
+}

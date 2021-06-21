@@ -1,0 +1,34 @@
+.navigator {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(44, 43, 43);
+  font-size: 1.5rem;
+  padding: 2vh 3vw;
+  text-align: center;
+  width: 100vw;
+
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid whitesmoke;
+
+  z-index: 100;
+
+  &__logo {
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__link {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+}

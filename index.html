@@ -15,48 +15,39 @@
     
 </head>
 <body>
-    <div class="container">
-        <nav id="navbar" class="navigator">
-            <a class="navigator__link"  href=""><img class="navigator__logo" src="img/logo-maii.png" alt="mai logo"></a>
-            <a class="navigator__link" href="#home">Home</a>
-            <a class="navigator__link" href="#about">About</a>
-            <a class="navigator__link" href="#projects">Projects</a>
-            <a class="navigator__link" href="#technologies">Skills</a>
-            <a class="navigator__link" target="_blank" href="https://little-chi-mai.github.io/portfolio/resume-mai.pdf">Resume</a>
-            <div class="footer-nav__wrap">
+    <nav id="navbar" class="navigator">
+        <a class="navigator__link"  href=""><img class="navigator__logo" src="img/logo-maii.png" alt="mai logo"></a>
+        <a class="navigator__link" href="#home">Home</a>
+        <a class="navigator__link" href="#about">About</a>
+        <a class="navigator__link" href="#projects">Projects</a>
+        <a class="navigator__link" href="#technologies">Skills</a>
+        <a class="navigator__link" target="_blank" href="https://little-chi-mai.github.io/portfolio/resume-mai.pdf">Resume</a>
+        <div class="navigator__wrap">
             
-                    <img onclick="copyToClipboard()" class="footer-nav__wrap-icon"  src="SVG/gmail-color.svg" alt="">
-                
-                <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
-                    <img class="footer-nav__wrap-icon"  src="SVG/linkedin-color.svg" alt="">
-                </a>
-                <a href="https://github.com/little-chi-mai" target="_blank">
-                    <img class="footer-nav__wrap-icon" src="SVG/github-color.svg" alt="">
-                </a>
+            <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
+                <img class="navigator__wrap-icon"  src="SVG/linkedin-color.svg" alt="">
+            </a>
+            <a href="https://github.com/little-chi-mai" target="_blank">
+                <img class="navigator__wrap-icon" src="SVG/github-color.svg" alt="">
+            </a>
 
-            </div>
-        </nav>
+            <img onclick="copyToClipboard()" class="navigator__wrap-icon"  src="SVG/gmail-color.svg" alt="">
+
+        </div>
+    </nav>
+    
+    <div class="container">
+        
 
         <div class="scrolling-box">
             <section id="home" class="home scrolling-box__section">
-                <div class="container-pic">
-                    <div class="container-inner">
-                      <img
-                        class="circle"
-                        src="./img/tropical2-blur.png"
-                      />
-                      <img
-                        class="img img1"
-                        src="./img/mai-3.png"
-                      />
-                    </div>
-                  </div>
+                
                 <div class="home__mai">
-                    <div class="wrapper">
-                        <p class="home__mai-name typing-demo">Mai Nguyen</p>
+                    <div class="type-demo__wrapper">
+                        <p class="type-demo__wrapper-name">Mai Nguyen</p>
                     </div>
                     
-                    <hr>
+
                     <p class="home__mai-title">Junior Software Engineer</p>
                     <div class="home__mai-location">
                         <img class="home__mai-location-icon" src="SVG/location-pin.svg" alt="">
@@ -64,7 +55,13 @@
                     </div>
                     
                 </div>
+
+                <img class="laptop" src="img/laptop.png" alt="">
+
+                
             </section>
+            
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7765.262pt" height="7994.137pt" version="1.1" viewBox="-4598.117 -1048.243 7765.262 7994.137"></svg> -->
             
             <section id="about" >
                 <div class="about">
@@ -72,36 +69,83 @@
                         <div class="title">About</div>
                     </div>
                     <div class="about__mai scrolling-box__section">
-                    
-                        <div>
-                            <p class="about__mai-story">
-                                Hello, my name is Mai (pronounced as /maɪ/ - like "My", with the attitude when you sing Eminem's song, <strong>My</strong> Name is)
-                            </p>
-                            <p class="about__mai-story">
-                                <em>
-                                    <strong>"My</strong> name is<br/>
-                                    What?<br/>
-                                    <strong>My</strong> name is<br/>
-                                    Who?<br/>
-                                    <strong>My</strong> name is<br/>
-                                    Mai!"
-                                </em>
-                                
-                            </p>
-                            <p class="about__mai-story">
-                                I am a junior software developer that is passionate about solving real world problems. From a self-taught amateur coder, my journey to be a professional engineer started with the decision of taking the Immersive Software Engineering course at General Assembly Australia. My whole life has changed since then. Learning how to build apps is the best thing that has ever happened to me. I have been and will be writing a lot more code, while also creating more bugs. I aim to keep learning to become a better developer so that I can help improve someone's life with technology.
-                            </p>
+                        <div class="about__mai-section about__mai-section-1">
+                            <img class="baymax"  src="img/baymax.png" alt="">
+                            <!-- <div class="container-pic">
+                                <div class="container-inner">
+                                    <img
+                                    class="circle"
+                                    src="./img/tropical2-blur.png"
+                                    />
+                                    <img
+                                    class="img img1"
+                                    src="./img/mai-3.png"
+                                    />
+                                </div>
+                            </div> -->
+                            <div>
+                                <p class="about__mai-story">
+                                    Hello, my name is Mai (pronounced as /maɪ/).
+                                </p>
+                                <!-- <p class="about__mai-story">
+                                    <em>
+                                        <strong>"My</strong> name is<br/>
+                                        What?<br/>
+                                        <strong>My</strong> name is<br/>
+                                        Who?<br/>
+                                        <strong>My</strong> name is<br/>
+                                        Mai!"
+                                    </em>
+                                    
+                                </p> -->
+                                <p class="about__mai-story">
+                                    I am a junior software developer that is passionate about solving real world problems. From a self-taught amateur coder, my journey to be a professional engineer started with the decision of taking the Immersive Software Engineering course at General Assembly Australia. My whole life has changed since then. Learning how to build apps is the best thing that has ever happened to me. I have been and will be writing a lot more code, while also creating more bugs. I aim to keep learning to become a better developer so that I can help improve someone's life with technology.
+                                </p>
+                                <p class="about__mai-story">
+                                    I am an ex-hotelier. Now I am a full-time Instructor Associate at General Assembly. I find it's amazing and rewarding to help our students to become better devs in the future. When not coding, I am a full-time dog-lover, an avid karaoke/shower singer and a part-time home cook. Dinner is absolute my favourite meal of the day because I get to sing while watching dog videos and cooking.
+                                </p>
+                                <p class="about__mai-story">
+                                    You can find some of my recent projects below. I keep them updated frequently.
+                                </p>
+                            </div>
                             
+                        </div>
+                        
+                        <div class="about__mai-section about__mai-section-2">
+                            <img class="arrow" src="img/arrow.png" alt="">
                             <p class="about__mai-story">
-                                I am an ex-hotelier. Now I am a full-time Instructor Associate at General Assembly. I find it's amazing and rewarding to help our students to become better devs in the future. When not coding, I am a full-time dog-lover, an avid karaoke/shower singer and a part-time home cook. Dinner is absolute my favourite meal of the day because I get to sing while watching dog videos and cooking.
-                            </p>
-    
-                            <p class="about__mai-story">
-                                You can find some of my recent projects below. I keep them updated frequently.
+                                I am passionate about building high-performance apps.
                             </p>
                         </div>
+
+                        <div class="about__mai-section about__mai-section-3">
+                            <img class="bulk" src="img/bulk.png" alt="">
+                            <p class="about__mai-story">
+                                Excellent problem solver with an eye for details.
+                            </p>
+    
+                            
+                        </div>
+                        
+                        
+                        <div class="about__mai-section about__mai-section-4">
+                            <img class="cake" src="img/cake.png" alt="">
+                            <p class="about__mai-story">
+                                I have a can-do atitude.
+                            </p>
+                        </div>
+
+                        <div class="about__mai-section about__mai-section-5">
+                            <img class="ball" src="img/ball.png" alt="">
+                            <p class="about__mai-story">
+                                I am a great team player.
+                            </p>
+                        </div>
+                       
                     </div>
                 </div>
+
+                
 
                 
             </section>
@@ -113,7 +157,7 @@
                     </div> -->
 
 
-            <section id="projects">
+            <section id="projects" class="projects">
                 <div class="title-wrapper">
                     <div class="title">Projects</div>
                 </div>
@@ -127,11 +171,25 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="projects__btn">
+                                <a href="https://furnique.netlify.app" target=”_blank”>
+                                    <button class="projects__btn-demo">Live demo</button>
+                                </a>
+        
+                                <a href="https://github.com/little-chi-mai/furnish-frontend" target=”_blank”>
+                                    <button class="projects__btn-git">Source code frontend</button>
+                                </a>
+        
+                                <a href="https://github.com/little-chi-mai/furnish-backend" target=”_blank”>
+                                    <button class="projects__btn-git">Source code backend</button>
+                                </a>
+                            </div>
+        
                             <p class="projects__cards-title projects__cards-title-1">FURNIQUE</p>
                             <p>. . .</p>
                             <div class="projects__description">
                                 <p>Furnique is an e-commerce website that sells furniture. Shopping cart updates in real time. Users can log in and keep track of their purchases history. Stripe is used as the payment gateway.</p>
-                                <p>. . .</p>
+                                <p class="center">. . .</p>
                                 <p>
                                     <strong>#MongoDB/Express/React/Nodejs/Sass</strong> 
                                 </p>
@@ -146,11 +204,20 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="projects__btn">
+                                <a href="https://foodhub-project1.herokuapp.com" target="_blank">
+                                    <button class="projects__btn-demo">Live demo</button>
+                                </a>
+        
+                                <a href="https://github.com/little-chi-mai/project1" target="_blank">
+                                    <button class="projects__btn-git">Source code</button>
+                                </a>
+                            </div>
                             <p class="projects__cards-title projects__cards-title-2">FOODHUB</p>
                             <p>. . .</p>
                             <div class="projects__description">
                                 <p>FoodHub is a web app that allows users to create their own account, post recipes and communicate with other users by commenting on their posts. Users can also create their recipe lists of their choice.</p>
-                                <p>. . .</p>
+                                <p class="center">. . .</p>
                                 <p>
                                     <strong>#Ruby/Rails/Bootstrap/PostgresQL</strong>
                                 </p>
@@ -165,11 +232,21 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="projects__btn">
+                                <a href="https://little-chi-mai.github.io/project2-frontend/" target="_blank">
+                                    <button class="projects__btn-demo">Live demo</button>
+                                </a>
+        
+                                <a href="https://github.com/Anchorite1001/project2-frontend" target="_blank">
+                                    <button class="projects__btn-git">Source code</button>
+                                </a>
+                            </div>
+        
                             <p class="projects__cards-title projects__cards-title-3">I feel like</p>
                             <p>. . .</p>
                             <div class="projects__description">
                                 <p>My first group project uses the Google Places API to suggest you with the a random restaurant when you feel adventurous with your culinary journey. The app allow you to log in and save your favourite restaurants to the database.</p>
-                                <p>. . .</p>
+                                <p class="center">. . .</p>
                                 <p> 
                                     <strong>#React/Rails/Bootstrap/PostgresQL</strong>
                                 </p>
@@ -184,11 +261,20 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="projects__btn">
+                                <a href="https://little-chi-mai.github.io/project0/" target=”_blank”>
+                                    <button class="projects__btn-d projects__btn-demo">Live demo</button>
+                                </a>
+        
+                                <a href="https://github.com/little-chi-mai/project0" target=”_blank”>
+                                    <button class="projects__btn-d projects__btn-git"><span>Source code</span></button>
+                                </a>
+                            </div>
                             <p class="projects__cards-title projects__cards-title-4">TIC TAC TOE</p>
                             <p>. . .</p>
                             <div class="projects__description">
                                 <p>This is a classic game that has been designed to play between two players and let them freely choose their tokens. The condition checking algorithm was built to perform efficiently and to be able to keep track of multiple rounds.</p>
-                                <p>. . .</p>
+                                <p class="center">. . .</p>
                                 <p> 
                                     <strong>#JavaScript/jQuery/HTML/CSS</strong>
                                 </p>
@@ -203,11 +289,20 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="projects__btn">
+                                <a href="https://little-chi-mai.github.io/molenir/" target=”_blank”>
+                                    <button class="projects__btn-d projects__btn-demo">Live demo</button>
+                                </a>
+        
+                                <a href="https://github.com/little-chi-mai/molenir" target=”_blank”>
+                                    <button class="projects__btn-d projects__btn-git"><span>Source code</span></button>
+                                </a>
+                            </div>
                             <p class="projects__cards-title projects__cards-title-5">MOLE-NIR</p>
                             <p>. . .</p>
                             <div class="projects__description">
                                 <p>Mole-nir is a cute whack-a-mole game. Players have 10 seconds every round and the game keeps track of the score. Fun fact: "Mole-nir" was named after Thor's hammer - Mjölnir!</p>
-                                <p>. . .</p>
+                                <p class="center">. . .</p>
                                 <p>
                                     <strong>#Javascript/jQuery/HTML/CSS</strong>
                                 </p>
@@ -220,78 +315,11 @@
                 <!-- <div class="projects__card">
                     
                     
-                        
-                    
-                    
-                    <div class="projects__btn">
-                        <a href="https://furnique.netlify.app" target=”_blank”>
-                            <button class="projects__btn-demo">Live demo</button>
-                        </a>
-
-                        <a href="https://github.com/little-chi-mai/furnish-frontend" target=”_blank”>
-                            <button class="projects__btn-git">Source code frontend</button>
-                        </a>
-
-                        <a href="https://github.com/little-chi-mai/furnish-backend" target=”_blank”>
-                            <button class="projects__btn-git">Source code backend</button>
-                        </a>
-                    </div>
-
-                    
-                </div> -->
-                
-                <!-- <div class="projects__card">
-                    
-                    
-
-                    <div class="projects__btn">
-                        <a href="https://foodhub-project1.herokuapp.com" target=”_blank”>
-                            <button class="projects__btn-demo">Live demo</button>
-                        </a>
-
-                        <a href="https://github.com/little-chi-mai/project1" target=”_blank”>
-                            <button class="projects__btn-git">Source code</button>
-                        </a>
-                    </div>
-
-                    
-
-                </div> -->
-
-                <!-- <div class="projects__card">
-                    
-                    
-                   
-                    
-                    <div class="projects__btn">
-                        <a href=https://github.com/Anchorite1001/project2-frontend" target=”_blank”>
-                            <button class="projects__btn-demo">Live demo</button>
-                        </a>
-
-                        <a href="https://github.com/Anchorite1001/project2-frontend" target=”_blank”>
-                            <button class="projects__btn-git">Source code</button>
-                        </a>
-                    </div>
-
-                    
-                </div> -->
-
-                <!-- <div class="projects__card">
-                    
-                    
                     <a href="https://little-chi-mai.github.io/project0/" target=”_blank" >
                         <img class="projects__card-photo" src="img/tic-tac-toe.png" alt="photo of the first project">
                     </a>
                     
-                    <div class="projects__btn">
-                        <a href="https://little-chi-mai.github.io/project0/" target=”_blank”>
-                            <button class="projects__btn-d projects__btn-demo">Live demo</button>
-                        </a>
-
-                        <a href="https://github.com/little-chi-mai/project0" target=”_blank”>
-                            <button class="projects__btn-d projects__btn-git"><span>Source code</span></button>
-                        </a>
-                    </div>
+                    
 
                     
                 </div> -->
@@ -335,24 +363,42 @@
                 </div>
                 
             </section>
+
+            <section id="footer">
+                <div class="title-wrapper">
+                    <div class="title">Say hi!</div>
+                </div>
+
+                <footer class="footer scrolling-box__section">
+                    <img class="balloon balloon-2"  src="img/balloon2.png" alt="">
+
+                    <div class="footer__box">
+                        <div class="footer__text">Let's build something great together!</div>
+                        <p class="footer__contact">Find out more about me through my <a target="_blank" href="https://little-chi-mai.github.io/portfolio/resume-mai.pdf">Resume</a>,
+                        <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">LinkedIn</a> and <a href="https://github.com/little-chi-mai" target="_blank">GitHub</a>.</p>
+                        <p>Or send me an email at <strong>chimai.dk@gmail.com</strong> </p>
+                        <div class="footer__wrap">
+                            <!-- <a  href="mailto:chimai.dk@gmail.com"> -->
+                                
+                            <!-- </a> -->
+                            <!-- <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
+                                <img class="footer__wrap-icon"  src="SVG/linkedin-color.svg" alt="">
+                            </a>
+                            <a href="https://github.com/little-chi-mai" target="_blank">
+                                <img class="footer__wrap-icon" src="SVG/github-color.svg" alt="">
+                            </a>
+                            <img onclick="copyToClipboard()" class="footer__wrap-icon footer__wrap-icon-mail"  src="SVG/gmail-color.svg" alt=""> -->
+                        </div>
+                    </div>
+                    
+                    
+                    <img class="balloon balloon-1"  src="img/balloon1.png" alt="">
+                </footer>
+            </section>
+
             
         </div>
-        <footer id="footer" class="footer">
-            <div class="footer__text">Let's keep in touch! Kindly find me on:</div>
-            <div class="footer__wrap">
-                <!-- <a  href="mailto:chimai.dk@gmail.com"> -->
-                    <img onclick="copyToClipboard()" class="footer__wrap-icon footer__wrap-icon-mail"  src="SVG/gmail.svg" alt="">
-                <!-- </a> -->
-                <a href="https://www.linkedin.com/in/chi-mai-nguyenn/" target="_blank">
-                    <img class="footer__wrap-icon"  src="SVG/linkedin-square.svg" alt="">
-                </a>
-                <a href="https://github.com/little-chi-mai" target="_blank">
-                    <img class="footer__wrap-icon" src="SVG/github.svg" alt="">
-                </a>
-
-            </div>
-            
-        </footer>
+        
     </div>
     
 </body>
