@@ -28,24 +28,28 @@
     }
 
     &-1 {
-      background-color: #e8c3b9;
+      background-color: #ffe6d6;
     }
 
     &-2 {
+      background-color: #fff3ce;
+    }
+
+    &-3 {
       background-color: #224a54;
       color: rgb(233, 233, 233);
     }
 
-    &-3 {
+    &-4 {
       background-color: #292929;
       color: rgb(233, 233, 233);
     }
 
-    &-4 {
+    &-5 {
       background-color: #ffece3;
     }
 
-    &-5 {
+    &-6 {
       background-color: rgb(134, 131, 175);
     }
 
@@ -62,18 +66,22 @@
       }
 
       &-2 {
-        font-family: "Indie Flower", cursive;
+        font-family: "Lato", cursive;
       }
 
       &-3 {
-        font-family: "Sacramento", cursive;
+        font-family: "Indie Flower", cursive;
       }
 
       &-4 {
-        font-family: "Cabin Sketch", cursive;
+        font-family: "Sacramento", cursive;
       }
 
       &-5 {
+        font-family: "Cabin Sketch", cursive;
+      }
+
+      &-6 {
         font-family: "Amatic SC", cursive;
       }
     }
@@ -101,18 +109,22 @@
         }
 
         &-2 {
-          background-image: url("../img/foodhub.png");
+          background-image: url("../img/tax-calco.png");
         }
 
         &-3 {
-          background-image: url("../img/i-feel-like.png");
+          background-image: url("../img/foodhub.png");
         }
 
         &-4 {
-          background-image: url("../img/tic-tac-toe.png");
+          background-image: url("../img/i-feel-like.png");
         }
 
         &-5 {
+          background-image: url("../img/tic-tac-toe.png");
+        }
+
+        &-6 {
           background-image: url("../img/molenir2.png");
         }
 
@@ -239,9 +251,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(min-content, max-content));
 
-    &-1 {
-      grid-row: 1/2;
-      grid-column: 1/-1;
+    // &-1 {
+    //   grid-row: 1/2;
+    //   grid-column: 1/-1;
+    // }
+    &-pho {
+      width: 60%;
     }
   }
 }
