@@ -274,7 +274,6 @@
 .projects__cards-all {
   min-width: 40vw;
   min-height: 0;
-  transition: all 0.3s ease-in-out;
   padding: 4vh 0;
   display: flex;
   flex-direction: column;
@@ -439,8 +438,7 @@
 .projects__description > p {
   text-align: justify;
   margin: 0;
-  padding: 0 15%;
-  transition: all 0.5s ease-in-out; }
+  padding: 0 15%; }
 
 .center {
   text-align: center !important; }
@@ -472,8 +470,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10%;
-    transition: all 0.5s ease-in-out; }
+    padding: 10%; }
     .technologies__icon-tech {
       height: 4rem;
       margin: 0.8rem;
@@ -545,8 +542,7 @@ font-family: 'Roboto Slab', serif; */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  transition: all 0.2s ease-in-out; }
+  padding: 0; }
 
 html {
   box-sizing: border-box;
