@@ -495,9 +495,6 @@
   background-position: left;
   transition: all 0.3s ease-in-out; }
 
-.projects__btn-demo:hover, .projects__btn-hi:hover, .projects__btn-git:hover {
-  transform: none; }
-
 .projects__description > p {
   text-align: justify;
   margin: 0;

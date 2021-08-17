@@ -1,16 +1,5 @@
 .projects {
-  // width: 100%;
   &__cards {
-    // display: grid;
-    // width: 80%;
-
-    // grid-template-rows: repeat(3, minmax(min-content, max-content));
-    // grid-template-columns: repeat(auto-fill, minmax(60vh, 1fr));
-
-    // grid-gap: 5vw;
-
-    // margin: 10vw;
-
     &-all {
       min-width: 40vw;
       min-height: 0;
@@ -241,12 +230,6 @@
     transition: all 0.3s ease-in-out;
   }
 
-  &__btn-demo:hover,
-  &__btn-hi:hover,
-  &__btn-git:hover {
-    transform: none;
-  }
-
   &__description > p {
     text-align: justify;
     margin: 0;
@@ -321,6 +304,7 @@
       // );
       // background-position: right;
     }
+
     &__btn-demo:hover,
     &__btn-hi:hover,
     &__btn-git:hover {
