@@ -14,7 +14,7 @@
 
   align-items: center;
   color: rgb(26, 26, 26);
-  min-height: 100vh;
+  min-height: 180vw;
   // padding: 4vw;
   min-width: 0;
   overflow: hidden;
@@ -57,16 +57,10 @@
     }
   }
 
-  &__photo {
-    height: 50vh;
-  }
-
   &__mai {
-    // margin: 3rem auto;
-    margin-top: 10vh;
+    margin-top: 15vw;
     margin-bottom: 2rem;
     transition: all 0.5s ease-in-out;
-    // flex: 0 1 35vw;
     text-align: center;
 
     &-title {
@@ -125,7 +119,7 @@
 
 @media (min-width: 540px) {
   .home {
-    min-height: 85vh;
+    min-height: 125vw;
     &__mai {
       margin-top: 8rem;
     }
@@ -138,6 +132,7 @@
     flex-direction: row;
     // width: 50%;
     width: 100%;
+    min-height: 100vw;
 
     &__mai {
       width: 40%;
@@ -173,8 +168,15 @@
   }
 }
 
+@media (min-width: 860px) {
+  .home {
+    min-height: 85vw;
+  }
+}
+
 @media (min-width: 1024px) {
   .home {
+    min-height: 70vw;
     &__mai {
       width: 40%;
       max-width: 50rem;

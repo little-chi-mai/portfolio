@@ -48,12 +48,13 @@ a:hover {
 }
 
 p {
+  line-height: 1.7;
 }
 
 .title-wrapper {
   position: relative;
   z-index: 10;
-  margin: 15vh auto;
+  margin: 10rem auto;
   .title {
     font-size: 8rem;
     color: black;
@@ -89,7 +90,7 @@ section {
 
   .noti-box {
     position: fixed;
-    top: 15vh;
+    top: 15rem;
     right: 15vw;
 
     padding: 1rem;
