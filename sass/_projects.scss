@@ -230,6 +230,12 @@
     transition: all 0.3s ease-in-out;
   }
 
+  &__btn-demo:hover,
+  &__btn-hi:hover,
+  &__btn-git:hover {
+    transform: none;
+  }
+
   &__description > p {
     text-align: justify;
     margin: 0;
@@ -309,7 +315,6 @@
     &__btn-demo:hover,
     &__btn-hi:hover,
     &__btn-git:hover {
-      transform: none;
       transform: translateY(-3px);
 
       /* BOX SHADOW: offset-x | offset-y | blur-radius | spread-radius | color*/

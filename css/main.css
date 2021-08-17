@@ -499,6 +499,9 @@
   background-position: left;
   transition: all 0.3s ease-in-out; }
 
+.projects__btn-demo:hover, .projects__btn-hi:hover, .projects__btn-git:hover {
+  transform: none; }
+
 .projects__description > p {
   text-align: justify;
   margin: 0;
@@ -535,7 +538,6 @@
   .projects__cards-pho:focus .projects__cards-photo:before {
     display: block; }
   .projects__btn-demo:hover, .projects__btn-hi:hover, .projects__btn-git:hover {
-    transform: none;
     transform: translateY(-3px);
     /* BOX SHADOW: offset-x | offset-y | blur-radius | spread-radius | color*/
     box-shadow: 0 3px 5px rgba(71, 71, 71, 0.192);
