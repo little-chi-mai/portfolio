@@ -186,6 +186,42 @@
         .smoke-1 {
           position: absolute;
           height: 10%;
+          bottom: 6.5vw;
+          right: 30%;
+        }
+        .smoke-2 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 7vw;
+          right: 27%;
+        }
+        .smoke-3 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 7.5vw;
+          right: 29%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    min-height: 95vh;
+    &__mai {
+      width: 40%;
+      max-width: 50rem;
+    }
+
+    .laptop-box {
+      height: 23vw;
+      .laptop-2 {
+        .smoke-1 {
+          position: absolute;
+          height: 10%;
           bottom: 5vw;
           right: 30%;
         }
@@ -204,21 +240,6 @@
           right: 29%;
         }
       }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .home {
-    min-height: 95vh;
-    &__mai {
-      width: 40%;
-      max-width: 50rem;
-    }
-
-    .laptop-box {
-      width: 50%;
-      height: 23vw;
     }
   }
 }

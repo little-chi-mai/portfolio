@@ -160,17 +160,17 @@
     .home .laptop-box .laptop-2 .smoke-1 {
       position: absolute;
       height: 10%;
-      bottom: 5vw;
+      bottom: 6.5vw;
       right: 30%; }
     .home .laptop-box .laptop-2 .smoke-2 {
       position: absolute;
       height: 10%;
-      bottom: 5.5vw;
+      bottom: 7vw;
       right: 27%; }
     .home .laptop-box .laptop-2 .smoke-3 {
       position: absolute;
       height: 10%;
-      bottom: 6vw;
+      bottom: 7.5vw;
       right: 29%; } }
 
 @media (min-width: 1200px) {
@@ -180,8 +180,22 @@
       width: 40%;
       max-width: 50rem; }
     .home .laptop-box {
-      width: 50%;
-      height: 23vw; } }
+      height: 23vw; }
+      .home .laptop-box .laptop-2 .smoke-1 {
+        position: absolute;
+        height: 10%;
+        bottom: 5vw;
+        right: 30%; }
+      .home .laptop-box .laptop-2 .smoke-2 {
+        position: absolute;
+        height: 10%;
+        bottom: 5.5vw;
+        right: 27%; }
+      .home .laptop-box .laptop-2 .smoke-3 {
+        position: absolute;
+        height: 10%;
+        bottom: 6vw;
+        right: 29%; } }
 
 .about {
   min-height: 50vh;
@@ -822,7 +836,7 @@ hr {
   animation: smoke 2.5s ease-out;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
-  animation-delay: 1s; }
+  animation-delay: 0.75s; }
 
 .animation-smoke-3 {
   animation: smoke 2.5s ease-out;
