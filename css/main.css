@@ -764,7 +764,7 @@ hr {
   opacity: 100% !important;
   animation: moveInBottom 1s ease-out;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s; }
+  animation-delay: 0.75s; }
 
 .animation-angle {
   opacity: 100% !important;
@@ -837,7 +837,7 @@ hr {
   opacity: 100% !important;
   animation: ziggle 0.75s ease-out;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s; }
+  animation-delay: 2s; }
 
 .animation-balloon-1 {
   opacity: 100% !important;
