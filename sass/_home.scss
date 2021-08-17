@@ -31,6 +31,30 @@
     .laptop {
       height: 100%;
     }
+    .laptop-2 {
+      height: 100%;
+      position: relative;
+      .smoke-1 {
+        position: absolute;
+        height: 10%;
+        bottom: 9.5vw;
+        right: 30%;
+      }
+      .smoke-2 {
+        position: absolute;
+        height: 10%;
+
+        bottom: 9vw;
+        right: 27%;
+      }
+      .smoke-3 {
+        position: absolute;
+        height: 10%;
+
+        bottom: 9.5vw;
+        right: 29%;
+      }
+    }
   }
 
   &__photo {
@@ -123,6 +147,28 @@
     .laptop-box {
       width: 50%;
       height: 35vw;
+      .laptop-2 {
+        .smoke-1 {
+          position: absolute;
+          height: 10%;
+          bottom: 8vw;
+          right: 30%;
+        }
+        .smoke-2 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 8.5vw;
+          right: 27%;
+        }
+        .smoke-3 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 7.8vw;
+          right: 29%;
+        }
+      }
     }
   }
 }
@@ -135,8 +181,29 @@
     }
 
     .laptop-box {
-      width: 50%;
       height: 30vw;
+      .laptop-2 {
+        .smoke-1 {
+          position: absolute;
+          height: 10%;
+          bottom: 5vw;
+          right: 30%;
+        }
+        .smoke-2 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 5.5vw;
+          right: 27%;
+        }
+        .smoke-3 {
+          position: absolute;
+          height: 10%;
+
+          bottom: 6vw;
+          right: 29%;
+        }
+      }
     }
   }
 }

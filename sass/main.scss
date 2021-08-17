@@ -246,6 +246,29 @@ hr {
   animation-iteration-count: infinite;
 }
 
+.animation-smoke-1 {
+  // opacity: 100% !important;
+  animation: smoke 2.5s ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+.animation-smoke-2 {
+  // opacity: 100% !important;
+  animation: smoke 2.5s ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.animation-smoke-3 {
+  // opacity: 100% !important;
+  animation: smoke 2.5s ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -367,23 +390,14 @@ hr {
 
 @keyframes balloon-1 {
   0% {
-    // opacity: 0;
     transform: translate(0);
   }
 
-  // 25% {
-  //   transform:
-  // }
   50% {
     transform: translateY(-2rem) rotate(1deg);
   }
 
-  // 80% {
-  //   transform: translateY(-2rem) rotate(-2deg);
-  // }
-
   100% {
-    // opacity: 1;
     transform: translate(0);
   }
 }
@@ -393,19 +407,36 @@ hr {
     transform: translate(0);
   }
 
-  // 25% {
-  //   transform: translateY(3rem) rotate(-1deg);
-  // }
   50% {
     // transform: translate(0);
     transform: translateY(4rem) rotate(2deg);
   }
 
-  // 80% {
-
-  // }
-
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5rem) rotate(2deg);
+  }
+
+  10% {
+    transform: rotate(-2deg);
+  }
+
+  20% {
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-0.5rem) rotate(2deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-1.25rem) rotate(0);
   }
 }
