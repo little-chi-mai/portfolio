@@ -89,7 +89,7 @@
     // reference https://css-tricks.com/zooming-background-images/
     &-pho {
       width: 78%;
-      height: 30vh;
+      height: 40vw;
       transition: all 0.5s;
       // to hide the edge
       overflow: hidden;
@@ -252,6 +252,7 @@
   .projects {
     &__cards {
       &-pho {
+        height: 30vw;
         &to {
           &-link {
             animation: changeColor 3s linear infinite alternate backwards;
@@ -350,6 +351,7 @@
 
     &-pho {
       width: 60%;
+      height: 30vh;
     }
   }
 
