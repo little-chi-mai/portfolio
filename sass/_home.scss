@@ -3,7 +3,7 @@
   // background-image: url(../img/about.png);
   // linear-gradient(rgba(121, 67, 82, 0.6));
   background-size: cover;
-  width: 100%;
+  // width: 100%;
 
   background-position: left;
   background-repeat: no-repeat;
@@ -15,12 +15,22 @@
   align-items: center;
   color: rgb(26, 26, 26);
   min-height: 100vh;
-  padding: 4vw;
+  // padding: 4vw;
   min-width: 0;
   overflow: hidden;
 
-  .laptop {
+  .laptop-box {
+    // opacity: 0;
     width: 90%;
+    height: 40vw;
+    min-width: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .laptop {
+      height: 100%;
+    }
   }
 
   &__photo {
@@ -77,6 +87,18 @@
   }
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @media (min-width: 540px) {
   .home {
     min-height: 85vh;
@@ -91,14 +113,16 @@
     display: flex;
     flex-direction: row;
     // width: 50%;
+    width: 100%;
 
     &__mai {
       width: 40%;
       max-width: 40rem;
     }
 
-    .laptop {
+    .laptop-box {
       width: 50%;
+      height: 35vw;
     }
   }
 }
@@ -110,8 +134,9 @@
       max-width: 50rem;
     }
 
-    .laptop {
+    .laptop-box {
       width: 50%;
+      height: 30vw;
     }
   }
 }
@@ -124,8 +149,9 @@
       max-width: 50rem;
     }
 
-    .laptop {
+    .laptop-box {
       width: 50%;
+      height: 23vw;
     }
   }
 }
