@@ -102,12 +102,12 @@ const copyToClipboard = function() {
     g().removeAllRanges();
   }
   txt.remove();
-  // window.alert("Copied email to your clipboard!");
+  window.alert("Copied email to your clipboard!");
 
-  let notiEl = document.getElementsByClassName("noti-box")[0];
-  notiEl.classList.add("visible");
+  // let notiEl = document.getElementsByClassName("noti-box")[0];
+  // notiEl.classList.add("visible");
 
-  setTimeout(() => {
-    notiEl.classList.remove("visible");
-  }, 2000)
+  // setTimeout(() => {
+  //   notiEl.classList.remove("visible");
+  // }, 2000)
 }
