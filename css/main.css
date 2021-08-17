@@ -100,8 +100,8 @@
   align-items: center;
   justify-content: center; }
   .type-demo__wrapper-name {
-    width: 10ch;
-    animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
+    width: 11ch;
+    animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -572,6 +572,9 @@
   100% {
     background-color: #ff8a60; } }
 
+#technologies {
+  width: 100%; }
+
 .technologies {
   background-color: #fff3ce;
   display: flex;
@@ -595,6 +598,9 @@
       margin: 1rem;
       flex: 0 1 20%;
       justify-self: center; }
+
+#footer {
+  width: 100%; }
 
 .footer {
   width: 100%;
@@ -699,6 +705,15 @@ section {
   flex: 1 1 auto;
   min-height: 0;
   overflow: hidden; }
+  .container .noti-box {
+    position: fixed;
+    top: 15vh;
+    right: 15vw;
+    padding: 1rem;
+    background-color: #0f8c9c;
+    color: white;
+    z-index: 30;
+    display: none; }
 
 hr {
   margin: 2rem; }
@@ -725,6 +740,9 @@ hr {
   .scrolling-box__section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.visible {
+  display: block !important; }
+
 .animation-bottom {
   opacity: 100% !important;
   animation: moveInBottom 1s ease-out;
@@ -741,6 +759,12 @@ hr {
   animation: moveInBottom 1s ease-out;
   animation-fill-mode: backwards;
   animation-delay: 2.5s; }
+
+.animation-bottom-wait-3 {
+  opacity: 100% !important;
+  animation: moveInBottom 1s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s; }
 
 .animation-angle {
   opacity: 100% !important;
@@ -817,13 +841,13 @@ hr {
 
 .animation-balloon-1 {
   opacity: 100% !important;
-  animation: balloon-1 5s ease-out;
+  animation: balloon-1 4s ease-out;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite; }
 
 .animation-balloon-2 {
   opacity: 100% !important;
-  animation: balloon-2 7s ease-out;
+  animation: balloon-2 6s ease-out;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite; }
 

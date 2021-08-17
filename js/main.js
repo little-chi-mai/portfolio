@@ -53,13 +53,13 @@ window.onscroll = function() {
   
   addClass(700, "animation-bottom", "baymax");
   addClassMultiple(700, "animation-angle-wait", "arrow");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-0");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-1");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-2");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-3");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-4");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-5");
-  addClassMultiple(800, "animation-appear", "projects__cards-title-6");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-0");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-2");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-1");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-3");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-4");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-5");
+  addClassMultiple(700, "animation-bottom-wait-3", "projects__cards-title-6");
 
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -97,5 +97,12 @@ const copyToClipboard = function() {
     g().removeAllRanges();
   }
   txt.remove();
-  window.alert("Copied email to your clipboard!");
+  // window.alert("Copied email to your clipboard!");
+
+  let notiEl = document.getElementsByClassName("noti-box")[0];
+  notiEl.classList.add("visible");
+
+  setTimeout(() => {
+    notiEl.classList.remove("visible");
+  }, 2000)
 }
