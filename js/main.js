@@ -77,39 +77,37 @@ $(document).ready(function() {
   let myHeaders = new Headers();
   myHeaders.append('permissions-policy', 'interest-cohort=()');
   
-  // appear baymax
-  
-  
-  // Copy to clipboard
-  const copyToClipboard = function() {
-    let txt = document.createTextNode('chimai.dk@gmail.com');
-    let m = document;
-    let w = window;
-    let b = m.body;
-    b.appendChild(txt);
-    if (b.createTextRange) {
-      let d = b.createTextRange();
-      d.moveToElementText(txt);
-      d.select();
-      m.execCommand('copy');
-    } 
-    else {
-      let d = m.createRange();
-      let g = w.getSelection;
-      d.selectNodeContents(txt);
-      g().removeAllRanges();
-      g().addRange(d);
-      m.execCommand('copy');
-      g().removeAllRanges();
-    }
-    txt.remove();
-    // window.alert("Copied email to your clipboard!");
-  
-    let notiEl = document.getElementsByClassName("noti-box")[0];
-    notiEl.classList.add("visible");
-  
-    setTimeout(() => {
-      notiEl.classList.remove("visible");
-    }, 2000)
-  }
 })
+
+// Copy to clipboard
+const copyToClipboard = function() {
+  let txt = document.createTextNode('chimai.dk@gmail.com');
+  let m = document;
+  let w = window;
+  let b = m.body;
+  b.appendChild(txt);
+  if (b.createTextRange) {
+    let d = b.createTextRange();
+    d.moveToElementText(txt);
+    d.select();
+    m.execCommand('copy');
+  } 
+  else {
+    let d = m.createRange();
+    let g = w.getSelection;
+    d.selectNodeContents(txt);
+    g().removeAllRanges();
+    g().addRange(d);
+    m.execCommand('copy');
+    g().removeAllRanges();
+  }
+  txt.remove();
+  // window.alert("Copied email to your clipboard!");
+
+  let notiEl = document.getElementsByClassName("noti-box")[0];
+  notiEl.classList.add("visible");
+
+  setTimeout(() => {
+    notiEl.classList.remove("visible");
+  }, 2000)
+}
