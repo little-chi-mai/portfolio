@@ -659,6 +659,7 @@
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
+    justify-content: space-around;
     padding: 7%; }
     .footer__text {
       text-align: left; }
