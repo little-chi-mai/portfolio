@@ -39,7 +39,6 @@
     align-items: center;
     justify-content: center;
 
-    // flex: 1 1 20%;
     &-icon {
       height: 5rem;
       margin: 2rem 5vw;
@@ -78,24 +77,6 @@
     max-width: 30%;
   }
 }
-
-// @media (min-width: 768px) {
-//   body {
-//     background-color: rgb(105, 20, 20);
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .balloon {
-//     &-2 {
-//       max-width: 20%;
-//     }
-
-//     &-1 {
-//       max-width: 30%;
-//     }
-//   }
-// }
 
 @media (min-width: 1024px) {
   .footer {
